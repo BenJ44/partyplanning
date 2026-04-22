@@ -549,6 +549,7 @@ let guests=cp(G0), prepDays=cp(P0), checkList=cp(C0),
 C0.forEach(c=>{ checkSt[c.id]=c.s; });
 
 let ready=false;
+let skipNext=0;
 function cp(x){ return JSON.parse(JSON.stringify(x)); }
 function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
 function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
@@ -556,6 +557,7 @@ function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;')
 // ---- FIREBASE ----
 function save(){
   if(!ready) return;
+  skipNext++;
   set(STATE_REF,{guests,prepDays,checkList,decoList,toBuyList,shopList,mSucre,mSale,mBoissons,prepChk,checkSt,decoChk,tbChk,shChk});
   const t=document.getElementById('save-toast');
   if(t){t.style.opacity='1';setTimeout(()=>t.style.opacity='.35',1200);}
@@ -564,8 +566,8 @@ function load(s){
   if(s.guests)    guests=s.guests;
   if(s.prepDays)  prepDays=s.prepDays;
   if(s.checkList) checkList=s.checkList;
-  if(s.decoList)  decoList=s.decoList;
-  if(s.toBuyList) toBuyList=s.toBuyList;
+  if(s.decoList!==undefined)  decoList=s.decoList;
+  if(s.toBuyList!==undefined) toBuyList=s.toBuyList;
   if(s.shopList)  shopList=s.shopList;
   if(s.mSucre)    mSucre=s.mSucre;
   if(s.mSale)     mSale=s.mSale;
@@ -577,16 +579,18 @@ function load(s){
   if(s.shChk)     shChk=s.shChk;
 }
 onValue(STATE_REF, snap=>{
-  const s=snap.val();
-  if(s) load(s);
   if(!ready){
+    const s=snap.val();
+    if(s) load(s);
     ready=true;
     document.getElementById('loadingScreen').style.display='none';
     document.getElementById('appContent').style.display='block';
     initAll();
-  } else {
-    refreshAll();
+    return;
   }
+  if(skipNext>0){ skipNext--; return; }
+  const s=snap.val();
+  if(s){ load(s); refreshAll(); }
 },{onlyOnce:false});
 
 // ---- NAV ----
