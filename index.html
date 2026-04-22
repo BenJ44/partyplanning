@@ -16,11 +16,11 @@ body{background:var(--cr)}
 .hsub{color:rgba(255,255,255,0.55);font-size:.88rem;font-weight:300;margin-top:.4rem}
 .tchips{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-top:1rem}
 .tchip{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.88);border-radius:50px;padding:4px 14px;font-size:.72rem;font-weight:600;letter-spacing:.8px}
+.hero-actions{display:flex;gap:10px;justify-content:center;align-items:center;margin-top:1rem;flex-wrap:wrap}
 .snav{position:sticky;top:0;z-index:100;background:white;box-shadow:0 2px 14px rgba(0,0,0,.08);overflow-x:auto;white-space:nowrap;display:flex;scrollbar-width:none}
 .snav::-webkit-scrollbar{display:none}
 .nb{display:inline-flex;align-items:center;gap:5px;padding:.8rem 1rem;font-size:.74rem;font-weight:600;color:#666;background:none;border:none;border-bottom:3px solid transparent;cursor:pointer;white-space:nowrap;transition:all .18s;font-family:'Poppins',sans-serif!important}
-.nb:hover{color:var(--w)}
-.nb.on{color:var(--w);border-bottom-color:var(--w);background:var(--wp)}
+.nb:hover{color:var(--w)}.nb.on{color:var(--w);border-bottom-color:var(--w);background:var(--wp)}
 .page{display:none;max-width:1100px;margin:0 auto;padding:1.8rem 1.2rem 4rem}
 .page.on{display:block;animation:fu .3s ease}
 @keyframes fu{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
@@ -28,30 +28,47 @@ body{background:var(--cr)}
 .fbar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:.9rem}
 .fb{padding:4px 12px;border-radius:50px;border:1.5px solid #ddd;background:white;font-size:.72rem;font-weight:600;cursor:pointer;color:#666;transition:all .16s;font-family:'Poppins',sans-serif!important}
 .fb:hover{border-color:var(--w);color:var(--w)}.fb.on{background:var(--w);border-color:var(--w);color:white}
-.srel{position:relative;display:inline-block;width:300px;max-width:100%;margin-bottom:.9rem}
+.srel{position:relative;display:inline-block;width:260px;max-width:100%}
 .srel input{border:1.5px solid #e0e0e0;border-radius:10px;padding:7px 11px 7px 32px;font-family:'Poppins',sans-serif!important;font-size:.82rem;width:100%;outline:none;transition:border .2s}
 .srel input:focus{border-color:var(--w)}.srel .si{position:absolute;left:10px;top:50%;transform:translateY(-50%);font-size:.78rem;color:#ccc}
 .sbadges{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.1rem}
 .sb{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:50px;font-size:.75rem;font-weight:600}
 .sby{background:#f0faf5;color:#1a7a4a}.sbn{background:#fff5f7;color:#c0392b}.sbm{background:#fffbeb;color:#8a6300}.sbp{background:#f3f0ff;color:#6941c6}
+.add-btn{background:var(--w);color:white;border:none;border-radius:8px;padding:7px 14px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .16s;font-family:'Poppins',sans-serif!important;white-space:nowrap}
+.add-btn:hover{background:var(--wl)}
+.add-btn-sm{background:var(--wp);color:var(--w);border:1.5px solid rgba(123,29,51,.2);border-radius:7px;padding:4px 10px;font-size:.7rem;font-weight:600;cursor:pointer;transition:all .16s;font-family:'Poppins',sans-serif!important}
+.add-btn-sm:hover{background:var(--w);color:white}
+.cancel-btn{background:#f5f5f5;color:#888;border:none;border-radius:8px;padding:7px 14px;font-size:.75rem;font-weight:600;cursor:pointer;font-family:'Poppins',sans-serif!important}
+.cancel-btn:hover{background:#e8e8e8}
+.add-form{background:white;border-radius:12px;padding:1rem;margin-bottom:.9rem;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1.5px solid #f0f0f0;animation:fu .2s ease}
+.add-form p{font-size:.8rem;font-weight:700;margin-bottom:.7rem;color:var(--w)}
+.add-row{display:flex;gap:8px;flex-wrap:wrap;align-items:flex-end}
+.add-field{display:flex;flex-direction:column;gap:3px}
+.add-field label{font-size:.68rem;color:#aaa;font-weight:600}
+.add-input{border:1.5px solid #e0e0e0;border-radius:8px;padding:7px 10px;font-family:'Poppins',sans-serif!important;font-size:.8rem;outline:none;transition:border .2s;min-width:120px}
+.add-input:focus{border-color:var(--w)}
+select.add-input{background:white;cursor:pointer}
 .gg{display:grid;grid-template-columns:repeat(auto-fill,minmax(178px,1fr));gap:7px}
 .gc{display:flex;align-items:center;justify-content:space-between;background:white;border:1.5px solid #f0f0f0;border-radius:11px;padding:8px 11px;transition:all .16s}
 .gc:hover{border-color:#ddd;box-shadow:0 2px 8px rgba(0,0,0,.07)}.gc.gno{opacity:.5}
 .gcn{font-size:.81rem;font-weight:600}.gco{font-size:.66rem;color:#bbb;margin-top:1px}
+.gc-actions{display:flex;align-items:center;gap:3px}
 .gsbtn{background:none;border:none;cursor:pointer;font-size:.95rem;padding:2px 4px;border-radius:6px;transition:background .15s;line-height:1}
 .gsbtn:hover{background:#f0f0f0}
+.del-btn{background:none;border:none;cursor:pointer;font-size:.7rem;color:#ddd;padding:2px 5px;border-radius:4px;line-height:1;transition:all .15s;flex-shrink:0}
+.del-btn:hover{color:#f14668;background:#fff5f7}
 .sdrop{position:absolute;right:0;top:110%;background:white;border:1.5px solid #eee;border-radius:10px;box-shadow:0 6px 20px rgba(0,0,0,.12);z-index:200;min-width:150px;overflow:hidden}
 .sdrop button{display:flex;align-items:center;gap:8px;width:100%;padding:8px 12px;background:none;border:none;font-size:.78rem;font-weight:500;cursor:pointer;font-family:'Poppins',sans-serif!important;transition:background .15s}
 .sdrop button:hover{background:var(--wp)}.sdrop button.cur{background:var(--wp);color:var(--w);font-weight:700}
 .gc-wrap{position:relative}
-.dl{background:linear-gradient(90deg,var(--wp),transparent);border-left:3px solid var(--w);border-radius:0 9px 9px 0;padding:8px 14px;margin-bottom:8px;margin-top:1.3rem}
+.dl{background:linear-gradient(90deg,var(--wp),transparent);border-left:3px solid var(--w);border-radius:0 9px 9px 0;padding:8px 14px;margin-bottom:8px;margin-top:1.3rem;display:flex;align-items:center;justify-content:space-between}
 .dl h3{font-size:.86rem;font-weight:700;color:var(--w)}.dl p{font-size:.71rem;color:#bbb}
-.tr2{display:flex;align-items:center;gap:10px;background:white;border-radius:10px;padding:9px 12px;margin-bottom:5px;border:1.5px solid #f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:all .16s;cursor:pointer}
-.tr2:hover{border-color:#ddd;box-shadow:0 2px 8px rgba(0,0,0,.07)}
-.tr2.done-task{background:#f9fef9;border-color:#c8ecd4}.tr2.done-task .tn{text-decoration:line-through;color:#bbb}.tr2.done-task .tw{color:#ddd}
-.chk{width:18px;height:18px;border-radius:5px;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .16s;font-size:.7rem}
+.tr2{display:flex;align-items:center;gap:10px;background:white;border-radius:10px;padding:9px 12px;margin-bottom:5px;border:1.5px solid #f0f0f0;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:all .16s}
+.tr2:hover{border-color:#ddd}
+.tr2.done-task{background:#f9fef9;border-color:#c8ecd4}.tr2.done-task .tn{text-decoration:line-through;color:#bbb}
+.chk{width:18px;height:18px;border-radius:5px;border:2px solid #ddd;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .16s;font-size:.7rem;cursor:pointer}
 .chk.checked{background:#48c78e;border-color:#48c78e;color:white}
-.tn{font-size:.82rem;font-weight:600;flex:1;transition:all .2s}.tw{font-size:.69rem;color:#bbb}.tno{font-size:.67rem;color:#ccc;font-style:italic}
+.tn{font-size:.82rem;font-weight:600;flex:1}.tw{font-size:.69rem;color:#bbb}.tno{font-size:.67rem;color:#ccc;font-style:italic}
 .badge{display:inline-flex;align-items:center;gap:3px;padding:3px 9px;border-radius:50px;font-size:.67rem;font-weight:700;white-space:nowrap;cursor:pointer;transition:all .16s;user-select:none}
 .badge:hover{opacity:.8;transform:scale(.97)}
 .bd{background:#effaf5;color:#1a7a4a}.bp{background:#fffbeb;color:#8a6300}.bt{background:#f5f5f5;color:#888}.ba{background:#fff5f7;color:#c0392b}
@@ -59,21 +76,23 @@ body{background:var(--cr)}
 .ct th{font-size:.67rem;text-transform:uppercase;letter-spacing:1px;color:#bbb;padding:9px 12px;border-bottom:2px solid #f0f0f0;background:#fafafa;text-align:left}
 .ct td{padding:9px 12px;border-bottom:1px solid #f5f5f5;vertical-align:middle}.ct tr:hover td{background:#fdfafb}
 .shop-grid{display:flex;flex-wrap:wrap;gap:5px;padding-top:4px}
-.schip{display:inline-flex;align-items:center;gap:5px;border-radius:8px;padding:4px 10px;font-size:.73rem;cursor:pointer;transition:all .16s;user-select:none;border:1.5px solid #eee;background:white}
-.schip:hover{border-color:#ddd;box-shadow:0 1px 4px rgba(0,0,0,.08)}
-.schip.checked{background:#effaf5;border-color:#c8ecd4;color:#777;text-decoration:line-through;opacity:.7}
-.schip .cbox{width:14px;height:14px;border-radius:4px;border:1.5px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:.55rem;flex-shrink:0;transition:all .16s}
+.schip{display:inline-flex;align-items:center;gap:4px;border-radius:8px;padding:4px 8px;font-size:.73rem;cursor:pointer;transition:all .16s;user-select:none;border:1.5px solid #eee;background:white}
+.schip:hover{border-color:#ddd}.schip.checked{background:#effaf5;border-color:#c8ecd4;color:#777;text-decoration:line-through;opacity:.7}
+.schip .cbox{width:13px;height:13px;border-radius:4px;border:1.5px solid #ddd;display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0}
 .schip.checked .cbox{background:#48c78e;border-color:#48c78e;color:white}
-.bchip{display:inline-flex;align-items:center;gap:5px;background:var(--wp);border:1.5px solid rgba(123,29,51,.18);border-radius:8px;padding:4px 10px;font-size:.73rem;cursor:pointer;transition:all .16s;user-select:none}
+.bchip{display:inline-flex;align-items:center;gap:4px;background:var(--wp);border:1.5px solid rgba(123,29,51,.18);border-radius:8px;padding:4px 8px;font-size:.73rem;cursor:pointer;transition:all .16s;user-select:none}
 .bchip:hover{border-color:var(--wl)}.bchip.checked{background:#effaf5;border-color:#c8ecd4;color:#888;text-decoration:line-through;opacity:.7}
-.bchip .cbox{width:14px;height:14px;border-radius:4px;border:1.5px solid rgba(123,29,51,.3);display:flex;align-items:center;justify-content:center;font-size:.55rem;flex-shrink:0}
+.bchip .cbox{width:13px;height:13px;border-radius:4px;border:1.5px solid rgba(123,29,51,.3);display:flex;align-items:center;justify-content:center;font-size:.5rem;flex-shrink:0}
 .bchip.checked .cbox{background:#48c78e;border-color:#48c78e;color:white}
 .progbar-wrap{background:#f0f0f0;border-radius:50px;height:7px;overflow:hidden;margin-top:5px}
 .progbar{height:100%;border-radius:50px;background:linear-gradient(90deg,#48c78e,#2ecc71);transition:width .4s ease}
 .card-wrap{background:white;border-radius:14px;padding:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
 .mc{background:white;border-radius:14px;padding:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-.mct{font-size:.9rem;font-weight:700;color:var(--w);margin-bottom:.7rem;padding-bottom:.5rem;border-bottom:2px solid var(--wp)}
+.mct{font-size:.9rem;font-weight:700;color:var(--w);padding-bottom:.5rem;border-bottom:2px solid var(--wp)}
 .mi{display:flex;align-items:flex-start;gap:6px;padding:5px 0;border-bottom:1px solid #f8f8f8;font-size:.79rem;line-height:1.4}
+.mi:hover .mi-del{opacity:1}
+.mi-del{opacity:0;background:none;border:none;cursor:pointer;color:#ccc;font-size:.65rem;margin-left:auto;padding:1px 4px;flex-shrink:0;transition:all .15s}
+.mi-del:hover{color:#f14668}
 .md{width:7px;height:7px;border-radius:50%;flex-shrink:0;margin-top:4px}
 .mdv{background:#48c78e}.mdb{background:var(--w)}.mds{background:#f4c430}.mdo{background:#aaa}
 .legr{display:flex;flex-wrap:wrap;gap:9px;background:#f9f9fb;border-radius:9px;padding:8px 12px;margin-bottom:1rem}
@@ -110,8 +129,10 @@ body{background:var(--cr)}
 .pr{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:1.2rem}
 .pb{background:white;border-radius:13px;padding:.9rem 1.2rem;box-shadow:0 2px 8px rgba(0,0,0,.05);flex:1;min-width:85px;text-align:center}
 .pn{font-size:1.8rem;font-weight:800;line-height:1}.pl{font-size:.64rem;color:#bbb;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-top:2px}
-.reset-btn{font-size:.69rem;color:#ccc;background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'Poppins',sans-serif!important;display:block;margin-bottom:.4rem}
+.reset-btn{font-size:.69rem;color:#ccc;background:none;border:none;cursor:pointer;text-decoration:underline;font-family:'Poppins',sans-serif!important;margin-bottom:.4rem}
 .reset-btn:hover{color:var(--w)}
+.spinner{width:22px;height:22px;border:2px solid #eee;border-top-color:var(--w);border-radius:50%;animation:spin .7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:600px){.tgal img{aspect-ratio:1/1}}
 </style>
 </head>
@@ -126,9 +147,8 @@ body{background:var(--cr)}
     <span class="tchip">✨ Argenté</span>
     <span class="tchip">💿 Chromé</span>
   </div>
-  <div style="margin-top:1rem">
+  <div class="hero-actions">
     <span id="save-toast" style="font-size:.68rem;color:rgba(255,255,255,.35);transition:opacity .5s">💾 Sauvegardé</span>
-    &nbsp;·&nbsp;
     <button onclick="resetAllState()" style="font-size:.68rem;color:rgba(255,255,255,.3);background:none;border:none;cursor:pointer;font-family:'Poppins',sans-serif;text-decoration:underline">↺ Tout réinitialiser</button>
   </div>
 </div>
@@ -147,14 +167,41 @@ body{background:var(--cr)}
 
 <div style="background:#f5f4f2;min-height:80vh;padding-bottom:2rem">
 
+<div id="loadingScreen" style="display:flex;align-items:center;justify-content:center;padding:4rem;flex-direction:column;gap:12px">
+  <div class="spinner"></div>
+  <p style="color:#bbb;font-size:.85rem">Connexion en cours…</p>
+</div>
+
+<div id="appContent" style="display:none">
+
+<!-- INVITÉS -->
 <div class="page on" id="p-invites">
-  <div class="ph"><h2>👥 Invité·e·s</h2><p>Cliquez sur l'icône d'un invité pour changer son statut</p></div>
+  <div class="ph"><h2>👥 Invité·e·s</h2><p>Cliquez sur l'emoji pour changer le statut · ✕ pour supprimer</p></div>
   <div class="sbadges" id="gstats"></div>
   <div class="fbar" id="gfilters"></div>
-  <div class="srel"><span class="si">🔍</span><input id="gsearch" type="text" placeholder="Rechercher…" oninput="rGuests()"></div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:.9rem">
+    <div class="srel"><span class="si">🔍</span><input id="gsearch" type="text" placeholder="Rechercher…" oninput="rGuests()"></div>
+    <button class="add-btn" onclick="toggleForm('addGuestForm')">+ Ajouter un invité</button>
+  </div>
+  <div id="addGuestForm" class="add-form" style="display:none">
+    <p>Nouvel invité</p>
+    <div class="add-row">
+      <div class="add-field"><label>Nom *</label><input id="newGuestName" class="add-input" placeholder="ex: Marie"></div>
+      <div class="add-field"><label>Note (optionnel)</label><input id="newGuestNote" class="add-input" placeholder="ex: Soir uniquement"></div>
+      <div class="add-field"><label>Statut</label>
+        <select id="newGuestStatus" class="add-input">
+          <option value="yes">✅ Confirmé·e</option><option value="partial">🔵 Partiel</option>
+          <option value="maybe">🟡 À confirmer</option><option value="no">❌ Absent·e</option>
+        </select>
+      </div>
+      <button class="add-btn" onclick="addGuest()">Ajouter</button>
+      <button class="cancel-btn" onclick="toggleForm('addGuestForm')">Annuler</button>
+    </div>
+  </div>
   <div class="gg" id="ggrid"></div>
 </div>
 
+<!-- PROGRAMME -->
 <div class="page" id="p-programme">
   <div class="ph"><h2>📅 Programme</h2><p>Samedi 2 Mai 2026</p></div>
   <div class="columns">
@@ -185,12 +232,31 @@ body{background:var(--cr)}
   </div>
 </div>
 
+<!-- PRÉPARATION -->
 <div class="page" id="p-prep">
-  <div class="ph"><h2>📋 Préparation</h2><p>Cochez les tâches au fur et à mesure</p></div>
-  <button class="reset-btn" onclick="resetPrep()">↺ Tout décocher</button>
+  <div class="ph"><h2>📋 Préparation</h2><p>Cochez les tâches · Ajoutez ou supprimez</p></div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:.8rem;flex-wrap:wrap">
+    <button class="reset-btn" style="margin-bottom:0" onclick="resetPrep()">↺ Tout décocher</button>
+    <button class="add-btn-sm" onclick="toggleForm('addPrepForm')">+ Ajouter une tâche</button>
+  </div>
+  <div id="addPrepForm" class="add-form" style="display:none">
+    <p>Nouvelle tâche</p>
+    <div class="add-row">
+      <div class="add-field" style="flex:2;min-width:140px"><label>Tâche *</label><input id="newPrepTask" class="add-input" placeholder="ex: Préparer les décos" style="width:100%"></div>
+      <div class="add-field" style="flex:1;min-width:110px"><label>Responsable</label><input id="newPrepWho" class="add-input" placeholder="ex: Jihane" style="width:100%"></div>
+      <div class="add-field"><label>Jour</label>
+        <select id="newPrepDay" class="add-input">
+          <option value="0">Jeudi J-2</option><option value="1">Vendredi J-1</option><option value="2">Samedi Jour J</option>
+        </select>
+      </div>
+      <button class="add-btn" onclick="addPrepTask()">Ajouter</button>
+      <button class="cancel-btn" onclick="toggleForm('addPrepForm')">Annuler</button>
+    </div>
+  </div>
   <div id="prepContent"></div>
 </div>
 
+<!-- MENU -->
 <div class="page" id="p-menu">
   <div class="ph"><h2>🍽️ Menu</h2></div>
   <div class="legr">
@@ -200,9 +266,60 @@ body{background:var(--cr)}
     <div class="li2"><div class="ld" style="background:#aaa"></div>En possession</div>
   </div>
   <div class="columns is-variable is-3">
-    <div class="column"><div class="mc"><div class="mct">🍰 Sucré</div><div id="mSucre"></div></div></div>
-    <div class="column"><div class="mc"><div class="mct">🧀 Salé</div><div id="mSale"></div></div></div>
-    <div class="column"><div class="mc"><div class="mct">🥂 Boissons</div><div id="mBoissons"></div></div></div>
+    <div class="column"><div class="mc">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem">
+        <div class="mct">🍰 Sucré</div>
+        <button class="add-btn-sm" onclick="toggleForm('addMenuSucreForm')">+ Ajouter</button>
+      </div>
+      <div id="addMenuSucreForm" class="add-form" style="display:none;padding:.7rem">
+        <div class="add-row">
+          <input id="newMenuSucreName" class="add-input" placeholder="ex: Macarons" style="flex:1;min-width:100px">
+          <select id="newMenuSucreType" class="add-input" style="min-width:100px">
+            <option value="valid">Validé</option><option value="bought">Acheté</option>
+            <option value="study">En étude</option><option value="owned">En possession</option>
+          </select>
+          <button class="add-btn" onclick="addMenuItem('sucre')">+</button>
+          <button class="cancel-btn" onclick="toggleForm('addMenuSucreForm')">✕</button>
+        </div>
+      </div>
+      <div id="mSucre"></div>
+    </div></div>
+    <div class="column"><div class="mc">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem">
+        <div class="mct">🧀 Salé</div>
+        <button class="add-btn-sm" onclick="toggleForm('addMenuSaleForm')">+ Ajouter</button>
+      </div>
+      <div id="addMenuSaleForm" class="add-form" style="display:none;padding:.7rem">
+        <div class="add-row">
+          <input id="newMenuSaleName" class="add-input" placeholder="ex: Verrines crevettes" style="flex:1;min-width:100px">
+          <select id="newMenuSaleType" class="add-input" style="min-width:100px">
+            <option value="valid">Validé</option><option value="bought">Acheté</option>
+            <option value="study">En étude</option><option value="owned">En possession</option>
+          </select>
+          <button class="add-btn" onclick="addMenuItem('sale')">+</button>
+          <button class="cancel-btn" onclick="toggleForm('addMenuSaleForm')">✕</button>
+        </div>
+      </div>
+      <div id="mSale"></div>
+    </div></div>
+    <div class="column"><div class="mc">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem">
+        <div class="mct">🥂 Boissons</div>
+        <button class="add-btn-sm" onclick="toggleForm('addMenuBoissonsForm')">+ Ajouter</button>
+      </div>
+      <div id="addMenuBoissonsForm" class="add-form" style="display:none;padding:.7rem">
+        <div class="add-row">
+          <input id="newMenuBoissonsName" class="add-input" placeholder="ex: Kombucha" style="flex:1;min-width:100px">
+          <select id="newMenuBoissonsType" class="add-input" style="min-width:100px">
+            <option value="valid">Validé</option><option value="bought">Acheté</option>
+            <option value="study">En étude</option><option value="owned">En possession</option>
+          </select>
+          <button class="add-btn" onclick="addMenuItem('boissons')">+</button>
+          <button class="cancel-btn" onclick="toggleForm('addMenuBoissonsForm')">✕</button>
+        </div>
+      </div>
+      <div id="mBoissons"></div>
+    </div></div>
   </div>
   <div class="card-wrap" style="margin-top:1.2rem">
     <p style="font-weight:700;color:var(--w);margin-bottom:.7rem">🛒 Commande Leclerc Traiteur — 168€</p>
@@ -214,10 +331,10 @@ body{background:var(--cr)}
       <tr><td>Plateau mini blinis</td><td>2</td><td>—</td><td>—</td></tr>
       <tr style="background:var(--wp)"><td colspan="3"><b>TOTAL</b></td><td><b>168€</b></td></tr>
     </tbody></table>
-    <p style="font-size:.71rem;color:#bbb;margin-top:6px;font-style:italic">💡 Pas de pizza au brunch — prendre plus de quiche.</p>
   </div>
 </div>
 
+<!-- BOULANGERIE -->
 <div class="page" id="p-boulangerie">
   <div class="ph"><h2>🥐 Boulangerie</h2><p>Viennoiseries & pains pour le brunch</p></div>
   <div class="bc win">
@@ -246,19 +363,40 @@ body{background:var(--cr)}
   </div>
 </div>
 
+<!-- SHOPPING -->
 <div class="page" id="p-shopping">
-  <div class="ph"><h2>🛍️ Shopping</h2><p>Cochez ce qui est récupéré / acheté</p></div>
+  <div class="ph"><h2>🛍️ Shopping</h2><p>Cochez · Ajoutez ou supprimez</p></div>
   <div class="columns">
     <div class="column">
       <div class="card-wrap" style="margin-bottom:.8rem">
-        <p style="font-weight:700;color:#1a7a4a;margin-bottom:.4rem;font-size:.85rem">✅ Déco & Équipement Acheté</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+          <p style="font-weight:700;color:#1a7a4a;font-size:.85rem;margin:0">✅ Déco & Équipement Acheté</p>
+          <button class="add-btn-sm" onclick="toggleForm('addDecoForm')">+ Ajouter</button>
+        </div>
+        <div id="addDecoForm" class="add-form" style="display:none;padding:.7rem">
+          <div class="add-row">
+            <input id="newDecoItem" class="add-input" placeholder="ex: Guirlande lumineuse" style="flex:1" onkeydown="if(event.key==='Enter')addDecoItem()">
+            <button class="add-btn" onclick="addDecoItem()">+</button>
+            <button class="cancel-btn" onclick="toggleForm('addDecoForm')">✕</button>
+          </div>
+        </div>
         <button class="reset-btn" onclick="resetDeco()">↺ Tout décocher</button>
         <div id="decoList" class="shop-grid"></div>
       </div>
     </div>
     <div class="column">
       <div style="background:var(--wp);border-radius:14px;padding:1.1rem;border:2px dashed rgba(123,29,51,.18);margin-bottom:.8rem">
-        <p style="font-weight:700;color:var(--w);margin-bottom:.4rem;font-size:.85rem">🛒 Courses Restantes à Acheter</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.4rem">
+          <p style="font-weight:700;color:var(--w);font-size:.85rem;margin:0">🛒 Courses Restantes</p>
+          <button class="add-btn-sm" onclick="toggleForm('addToBuyForm')">+ Ajouter</button>
+        </div>
+        <div id="addToBuyForm" class="add-form" style="display:none;padding:.7rem;background:#fff8f9">
+          <div class="add-row">
+            <input id="newToBuyItem" class="add-input" placeholder="ex: Mozzarella" style="flex:1" onkeydown="if(event.key==='Enter')addToBuyItem()">
+            <button class="add-btn" onclick="addToBuyItem()">+</button>
+            <button class="cancel-btn" onclick="toggleForm('addToBuyForm')">✕</button>
+          </div>
+        </div>
         <button class="reset-btn" onclick="resetToBuy()">↺ Tout décocher</button>
         <div id="toBuyList" class="shop-grid"></div>
       </div>
@@ -269,13 +407,28 @@ body{background:var(--cr)}
       <p style="font-weight:700;font-size:.85rem;margin:0">📦 Courses Déjà Achetées</p>
       <span id="shopProgress" style="font-size:.75rem;color:#aaa"></span>
     </div>
-    <div class="progbar-wrap" style="margin-bottom:.8rem"><div class="progbar" id="shopBar" style="width:0%"></div></div>
-    <div class="fbar" id="shopFilters"></div>
+    <div class="progbar-wrap" style="margin-bottom:.7rem"><div class="progbar" id="shopBar" style="width:0%"></div></div>
+    <div style="display:flex;gap:8px;align-items:center;margin-bottom:.5rem;flex-wrap:wrap">
+      <div class="fbar" id="shopFilters" style="margin-bottom:0;flex:1"></div>
+      <button class="add-btn-sm" onclick="toggleForm('addShopForm')">+ Ajouter</button>
+    </div>
+    <div id="addShopForm" class="add-form" style="display:none;padding:.7rem">
+      <div class="add-row">
+        <input id="newShopItem" class="add-input" placeholder="ex: Olives vertes 200g" style="flex:1;min-width:120px" onkeydown="if(event.key==='Enter')addShopItem()">
+        <select id="newShopCat" class="add-input">
+          <option value="boissons">🥤 Boissons</option><option value="sucre">🍬 Sucré</option>
+          <option value="sale">🧂 Salé</option><option value="divers">📦 Divers</option>
+        </select>
+        <button class="add-btn" onclick="addShopItem()">+</button>
+        <button class="cancel-btn" onclick="toggleForm('addShopForm')">✕</button>
+      </div>
+    </div>
     <button class="reset-btn" onclick="resetShop()">↺ Tout décocher</button>
     <div id="shopList" class="shop-grid"></div>
   </div>
 </div>
 
+<!-- ACTIVITÉS -->
 <div class="page" id="p-activites">
   <div class="ph"><h2>🎵 Activités</h2></div>
   <p style="font-size:.79rem;font-weight:600;color:#777;margin-bottom:.6rem">Inspirations thème Bordeaux / Argenté / Chromé</p>
@@ -293,25 +446,24 @@ body{background:var(--cr)}
       <div class="ii">Instax de Clem et/ou Jiji — 60 pellicules</div>
       <div class="ii">Appareils photo Alex et Clem</div>
       <div class="ii"><a href="https://app.eventpics.net/2WwoQhuGYFw6" style="color:var(--w);font-weight:600">Drop photos : app.eventpics.net</a></div>
-      <div class="ii">S'abonner à EventPics dans 2 semaines</div>
     </div></div>
     <div class="column is-half"><div class="ib"><h3>🎲 Jeux</h3>
       <div class="ii">Jeux de Lois + Baptiste + invités</div>
       <div class="ii">Grande partie de Loup-Garou tous ensemble</div>
-      <div class="ii">Zone dédiée côté entrée (zone verte)</div>
     </div></div>
     <div class="column is-half"><div class="ib"><h3>📦 Matériel</h3>
       <div class="ii">Thermos · bouilloire · crêpière · grille-pain</div>
       <div class="ii">Nespresso + cafetière filtre (Amélie & Jean)</div>
       <div class="ii">Tireuse à bière (Gaëlle & Guigui)</div>
-      <div class="ii">Sono (Carine) · Compresseur (Jojo) · Gonfleur (Baptiste)</div>
-      <div class="ii">Planches, couteaux, saladiers · Urne · Livre d'or · Chevalet</div>
+      <div class="ii">Sono (Carine) · Compresseur (Jojo)</div>
+      <div class="ii">Planches, couteaux, saladiers · Urne · Livre d'or</div>
     </div></div>
   </div>
 </div>
 
+<!-- CHECKLIST -->
 <div class="page" id="p-checklist">
-  <div class="ph"><h2>✅ Checklist</h2><p>Cliquez sur un badge de statut pour le faire avancer : À faire → En cours → Terminée → Abandonné</p></div>
+  <div class="ph"><h2>✅ Checklist</h2><p>Cliquez sur un badge pour changer le statut · Ajoutez ou supprimez</p></div>
   <div class="pr">
     <div class="pb"><div class="pn" style="color:#48c78e" id="cD">0</div><div class="pl">Terminées</div></div>
     <div class="pb"><div class="pn" style="color:#f4c430" id="cP">0</div><div class="pl">En cours</div></div>
@@ -319,14 +471,32 @@ body{background:var(--cr)}
     <div class="pb"><div class="pn" style="color:#f14668" id="cA">0</div><div class="pl">Abandonné</div></div>
   </div>
   <div class="progbar-wrap" style="margin-bottom:.8rem"><div class="progbar" id="checkBar" style="width:0%"></div></div>
-  <div class="fbar" id="checkFilters"></div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:.5rem;flex-wrap:wrap">
+    <div class="fbar" id="checkFilters" style="margin-bottom:0;flex:1"></div>
+    <button class="add-btn-sm" onclick="toggleForm('addCheckForm')">+ Ajouter</button>
+  </div>
+  <div id="addCheckForm" class="add-form" style="display:none">
+    <p>Nouvelle tâche</p>
+    <div class="add-row">
+      <div class="add-field" style="flex:2;min-width:140px"><label>Tâche *</label><input id="newCheckTask" class="add-input" placeholder="ex: Commander les fleurs" style="width:100%"></div>
+      <div class="add-field" style="flex:1;min-width:100px"><label>Responsable</label><input id="newCheckWho" class="add-input" placeholder="ex: Jihane" style="width:100%"></div>
+      <div class="add-field"><label>Statut</label>
+        <select id="newCheckStatus" class="add-input">
+          <option value="todo">○ À faire</option><option value="progress">⏳ En cours</option><option value="done">✓ Terminée</option>
+        </select>
+      </div>
+      <button class="add-btn" onclick="addCheckItem()">Ajouter</button>
+      <button class="cancel-btn" onclick="toggleForm('addCheckForm')">Annuler</button>
+    </div>
+  </div>
   <button class="reset-btn" onclick="resetChecklist()">↺ Réinitialiser aux valeurs d'origine</button>
   <div class="card-wrap" style="overflow-x:auto">
-    <table class="ct"><thead><tr><th>Tâche</th><th>Responsable</th><th>Statut (cliquer pour changer)</th><th>Remarque</th></tr></thead>
+    <table class="ct"><thead><tr><th>Tâche</th><th>Responsable</th><th>Statut</th><th>Remarque</th><th></th></tr></thead>
     <tbody id="checkBody"></tbody></table>
   </div>
 </div>
 
+<!-- COMMANDES -->
 <div class="page" id="p-commandes">
   <div class="ph"><h2>💳 Commandes</h2></div>
   <div class="card-wrap" style="overflow-x:auto">
@@ -342,24 +512,14 @@ body{background:var(--cr)}
   </div>
 </div>
 
-</div>
+</div><!-- appContent -->
+</div><!-- bg -->
 
 <script type="module">
-const GUESTS_DEF    = [{"name": "Baptiste", "status": "yes"}, {"name": "Jojo", "status": "yes"}, {"name": "Leina", "status": "yes"}, {"name": "Bertrand", "status": "yes"}, {"name": "Noa", "status": "yes"}, {"name": "Copine de Noa", "status": "yes"}, {"name": "Carine", "status": "yes"}, {"name": "Ludo", "status": "yes"}, {"name": "Thibault", "status": "yes"}, {"name": "Sylvain", "status": "yes"}, {"name": "Sol\u00e8ne", "status": "yes"}, {"name": "Cl\u00e9mentine", "status": "yes"}, {"name": "Alex", "status": "yes"}, {"name": "Louisana", "status": "yes"}, {"name": "Philippe Bossy", "status": "yes"}, {"name": "Fran\u00e7oise", "status": "yes"}, {"name": "Marie", "status": "yes"}, {"name": "Claire", "status": "yes"}, {"name": "Georges", "status": "yes"}, {"name": "Mamie", "status": "yes"}, {"name": "Tati", "status": "yes"}, {"name": "Hugues", "status": "yes"}, {"name": "Anne Marie", "status": "partial", "note": "Soir uniquement"}, {"name": "Elo", "status": "partial", "note": "Soir uniquement"}, {"name": "Romain", "status": "yes", "note": "Il dit oui mais\u2026"}, {"name": "Jean", "status": "yes"}, {"name": "Am\u00e9lie", "status": "yes"}, {"name": "Gaelle", "status": "yes"}, {"name": "Guillaume", "status": "yes"}, {"name": "Ludo G.", "status": "partial", "note": "Matin + aprem uniquement"}, {"name": "Alexia", "status": "partial", "note": "Matin + aprem uniquement"}, {"name": "Stephie", "status": "no", "note": "Ne peut pas venir"}, {"name": "Aurelien", "status": "no", "note": "Tonton de Carine"}, {"name": "Lucie", "status": "yes"}, {"name": "Julien B", "status": "yes"}, {"name": "Adrien", "status": "yes"}, {"name": "Najlae", "status": "yes"}, {"name": "Elliot", "status": "yes"}, {"name": "Christophe", "status": "maybe", "note": "Potentiellement matin/aprem"}, {"name": "Manon", "status": "maybe", "note": "Stage le soir"}, {"name": "Bidou (Thibault Guy)", "status": "yes"}, {"name": "Alixan", "status": "maybe", "note": "Si pr\u00e9sent"}];
-const MENU_SUCRE    = [{"name": "Panna cotta verrines (2 coulis)", "t": "valid"}, {"name": "Tiramisu en verrines", "t": "valid"}, {"name": "Chouquettes", "t": "valid"}, {"name": "Mini viennoiseries", "t": "bought"}, {"name": "Bonbons", "t": "bought"}, {"name": "G\u00e2teau d\u2019anniversaire", "t": "valid"}, {"name": "Verrines cr\u00e8me dessert chocolat", "t": "valid"}, {"name": "Verrines de li\u00e9geois", "t": "valid"}, {"name": "Mini pancakes", "t": "valid"}, {"name": "Fruits (bananes, raisins, pommes, kiwi)", "t": "valid"}, {"name": "Brioche x2", "t": "bought"}, {"name": "Tartines (nocciolata, caramel, confitures, speculoos)", "t": "bought"}, {"name": "Popcorn sucr\u00e9", "t": "bought"}, {"name": "Cake sucr\u00e9s", "t": "valid"}];
-const MENU_SALE     = [{"name": "Houmous", "t": "valid"}, {"name": "Sauces pour l\u00e9gumes", "t": "valid"}, {"name": "Salade pasta", "t": "valid"}, {"name": "Toasts rillettes de poulet", "t": "valid"}, {"name": "Verrines saumon", "t": "valid"}, {"name": "Roul\u00e9es pesto fromage", "t": "valid"}, {"name": "Pain", "t": "bought"}, {"name": "Planche charcuterie", "t": "valid"}, {"name": "Planche fromage", "t": "valid"}, {"name": "L\u00e9gumes (carottes, tomates, radis, c\u00e9leri)", "t": "valid"}, {"name": "Salade tomate mozza", "t": "valid"}, {"name": "Chips", "t": "bought"}, {"name": "Popcorn sal\u00e9", "t": "bought"}, {"name": "Crackers", "t": "bought"}, {"name": "Oeufs mimosa", "t": "valid"}, {"name": "Brochettes fromage/olives/tomates/serrano", "t": "valid"}, {"name": "Rillettes de thon", "t": "valid"}, {"name": "Mini sandwichs (pain de mie, jambon beurre, mozza pesto)", "t": "valid"}, {"name": "Cake sal\u00e9s chorizo comt\u00e9 x2", "t": "valid"}, {"name": "Cake sal\u00e9s courgettes feta x2", "t": "valid"}];
-const MENU_BOISSONS = [{"name": "Caf\u00e9", "t": "bought"}, {"name": "Th\u00e9 (vert, noir, infusions)", "t": "bought"}, {"name": "Eau plate", "t": "bought"}, {"name": "Eau gazeuse", "t": "bought"}, {"name": "Perrier / San Pellegrino", "t": "bought"}, {"name": "Jus d\u2019orange", "t": "bought"}, {"name": "Jus de pomme", "t": "bought"}, {"name": "Jus multifruits", "t": "bought"}, {"name": "Vin blanc sauvignon x18", "t": "bought"}, {"name": "Cr\u00e9mant", "t": "valid"}, {"name": "Coca Z\u00e9ro / Vanille / Cherry", "t": "bought"}, {"name": "Fanta orange", "t": "bought"}, {"name": "Fuze Tea (3 vari\u00e9t\u00e9s)", "t": "bought"}, {"name": "Oasis Tropical x4", "t": "bought"}, {"name": "J\u00e4ger 2L", "t": "bought"}, {"name": "Get 27 Menthe 2L", "t": "bought"}, {"name": "Ricard 2L", "t": "bought"}, {"name": "The Kraken (rhum)", "t": "bought"}, {"name": "F\u00fbt bi\u00e8re 30L", "t": "bought"}, {"name": "Crazy Tiger x4", "t": "bought"}, {"name": "Sirop grenadine + citron sicile", "t": "bought"}, {"name": "Lait demi-\u00e9cr\u00e9m\u00e9 6x1L + avoine 1L x2", "t": "bought"}];
-const PREP_DAYS     = [{"title": "Jeudi \u2014 Jour J-2", "date": "30 Avril 2026", "tasks": [{"id": "j1", "n": "Pr\u00e9parer les eco cups", "who": "manaud.laurent", "note": ""}, {"id": "j2", "n": "Pancakes", "who": "Jihane Benmansour", "note": ""}, {"id": "j3", "n": "Oeufs durs (40)", "who": "cbobbxta", "note": ""}, {"id": "j4", "n": "Coulis panna cotta", "who": "baptistebilleaud", "note": ""}, {"id": "j5", "n": "Panna cotta", "who": "Jihane Benmansour", "note": ""}, {"id": "j6", "n": "D\u00e9corer la salle", "who": "Jihane + manaud + cbobbxta + baptiste", "note": "Salle des f\u00eates"}, {"id": "j7", "n": "Remplir les poches \u00e0 gla\u00e7ons", "who": "\u2014", "note": ""}, {"id": "j8", "n": "Pr\u00e9parer le houmous", "who": "Jihane Benmansour", "note": ""}, {"id": "j9", "n": "Pr\u00e9parer la rillette de thon", "who": "cbobbxta", "note": ""}]}, {"title": "Vendredi \u2014 Jour J-1 \u00b7 F\u00e9ri\u00e9", "date": "1er Mai 2026", "tasks": [{"id": "v1", "n": "R\u00e9cup\u00e9rer commande Leclerc Traiteur", "who": "manaud.laurent", "note": "E.Leclerc TRAITEUR Lagord"}, {"id": "v2", "n": "R\u00e9cup\u00e9rer commande viennoiseries", "who": "\u00c0 d\u00e9finir", "note": "Le bonheur est dans le pain"}]}, {"title": "Samedi \u2014 Jour J", "date": "2 Mai 2026", "tasks": [{"id": "s1", "n": "R\u00e9cup\u00e9rer commande Leclerc Traiteur", "who": "manaud.laurent", "note": "E.Leclerc TRAITEUR Lagord"}, {"id": "s2", "n": "R\u00e9cup\u00e9rer commande viennoiseries", "who": "cbobbxta", "note": "Le bonheur est dans le pain"}]}];
-const CHECKLIST_DEF = [{"id": "c1", "t": "Payer la salle", "who": "Jihane", "s": "done"}, {"id": "c2", "t": "Commande pain et viennoiseries", "who": "Jihane", "s": "done"}, {"id": "c3", "t": "Cr\u00e9er les playlists", "who": "Jihane + cbobbxta", "s": "progress"}, {"id": "c4", "t": "Pr\u00e9parer les ecocups", "who": "manaud.laurent", "s": "todo"}, {"id": "c5", "t": "Trouver urne et livre d\u2019or", "who": "Jihane", "s": "done"}, {"id": "c6", "t": "Affiche QR code cagnotte", "who": "Jihane", "s": "done"}, {"id": "c7", "t": "D\u00e9corer l\u2019urne", "who": "Jihane", "s": "todo"}, {"id": "c8", "t": "Inventaire du mat\u00e9riel", "who": "Jihane", "s": "todo"}, {"id": "c9", "t": "Poser cong\u00e9s jeudi + TT lundi", "who": "Jihane", "s": "done"}, {"id": "c10", "t": "D\u00e9finir programme 3 jours", "who": "Jihane", "s": "progress"}, {"id": "c11", "t": "Finir les courses", "who": "Jihane", "s": "progress"}, {"id": "c12", "t": "Cr\u00e9er drop photos + QR code", "who": "Jihane", "s": "done", "r": "app.eventpics.net/2WwoQhuGYFw6"}, {"id": "c13", "t": "S\u2019abonner \u00e0 EventPics", "who": "Jihane", "s": "todo"}, {"id": "c14", "t": "Location f\u00fbt de bi\u00e8re", "who": "Jihane", "s": "done", "r": "F\u00fbt + tireuse au Caps"}, {"id": "c15", "t": "Listes allerg\u00e8nes et ingr\u00e9dients", "who": "Jihane", "s": "progress"}, {"id": "c16", "t": "Commande Leclerc Traiteur", "who": "Jihane", "s": "done"}, {"id": "c17", "t": "Trouver pizzeria", "who": "Jihane", "s": "abandoned", "r": "Alex am\u00e8ne son four"}];
-const DECO          = ["Verres ecocup blanc : 50", "Gobelets cartons : 100", "D\u00e9cos \u00e0 accrocher", "Serviettes eco", "Assiettes en carton : 100", "Couverts en bois 125/type", "Stickers t\u00eate de Lois", "16 lampions argent\u00e9s", "10 ballons disco argent\u00e9s", "5m papier intiss\u00e9 argent\u00e9", "1x9m satin bordeaux (chemin de table)", "2x9m tulle blanche", "5 guirlandes serpentin argent\u00e9es", "60 pellicules instax", "Ballons bordeaux et blancs", "96 verrines", "Nappe papier blanche 20M", "50 gobelets caf\u00e9", "5 plateaux carton", "5 barquettes alu", "Rinces doigts", "Touillettes \u00e0 caf\u00e9", "Enveloppes bordeaux (pellicules)", "Serviettes bordeaux", "Urne + Livre d\u2019or", "Serviettes 33x33 : 50 pi\u00e8ces"];
-const TO_BUY        = ["Agar agar", "Sucre (selon quantit\u00e9)", "Charcuterie : jambons, bacon", "Fromages : Morbier, ch\u00e8vre, camembert", "L\u00e9gumes : tomates cerises, c\u00e9leri, carottes, concombre", "Fruits : kiwi, bananes, pommes", "Oeufs", "10 baguettes", "Fruits surgel\u00e9s (coulis panna cotta)"];
-const SHOP          = [{"c": "boissons", "n": "Fanta Orange 1,25L x4"}, {"c": "boissons", "n": "Eau source 5L x5"}, {"c": "boissons", "n": "Perrier 6x1L"}, {"c": "boissons", "n": "San Pellegrino 6x1L x2"}, {"c": "boissons", "n": "Fuze Tea P\u00eache 1,25L x3"}, {"c": "boissons", "n": "Fuze Tea P\u00eache hibiscus x3"}, {"c": "boissons", "n": "Fuze Tea framboise menthe x3"}, {"c": "boissons", "n": "Oasis Tropical 2L x4"}, {"c": "boissons", "n": "Crazy Tiger 1,5L x4"}, {"c": "boissons", "n": "Vin blanc sauvignon 75cl x18"}, {"c": "boissons", "n": "Coca Vanille 1,25L x3"}, {"c": "boissons", "n": "Coca Z\u00e9ro Cherry 1,25L x3"}, {"c": "boissons", "n": "Sirop grenadine 70cl"}, {"c": "boissons", "n": "Sirop citron sicile 70cl"}, {"c": "boissons", "n": "The Kraken 40\u00b0 70cl"}, {"c": "boissons", "n": "F\u00fbt bi\u00e8re 30L (+r\u00e9serve)"}, {"c": "boissons", "n": "Get 27 Menthe 2L"}, {"c": "boissons", "n": "J\u00e4germeister 2L"}, {"c": "boissons", "n": "Ricard 2L"}, {"c": "boissons", "n": "Lait demi-\u00e9cr\u00e9m\u00e9 6x1L"}, {"c": "boissons", "n": "Jus multifruits 2L x3"}, {"c": "boissons", "n": "Caf\u00e9 filtre"}, {"c": "boissons", "n": "Nectar pomme 1,5L x2"}, {"c": "boissons", "n": "Jus orange sans pulpe 1L x4"}, {"c": "boissons", "n": "Coca Zero 6L x12"}, {"c": "boissons", "n": "Lait avoine 1L x2"}, {"c": "boissons", "n": "Jus orange 1,5L x2"}, {"c": "sucre", "n": "Bonbons t\u00e9tine 250g"}, {"c": "sucre", "n": "Th\u00e9 vert citron x20"}, {"c": "sucre", "n": "Earl Grey Bio x20"}, {"c": "sucre", "n": "Nocciolata 650g"}, {"c": "sucre", "n": "P\u00e2te cacahu\u00e8te croquant 325g"}, {"c": "sucre", "n": "Confiture abricot 370g"}, {"c": "sucre", "n": "Confiture framboises 370g"}, {"c": "sucre", "n": "Confiture fraises 370g"}, {"c": "sucre", "n": "Confiture p\u00eaches 370g"}, {"c": "sucre", "n": "Dragibus soft 300g"}, {"c": "sucre", "n": "Tagada 400g"}, {"c": "sucre", "n": "Bonbons Arlequin 250g"}, {"c": "sucre", "n": "Sucre canne 1kg"}, {"c": "sucre", "n": "Biscottes sans gluten 260g"}, {"c": "sucre", "n": "Miel 500g x2"}, {"c": "sucre", "n": "Th\u00e9 gingembre citron x20"}, {"c": "sucre", "n": "Infusion bien-\u00eatre x20"}, {"c": "sale", "n": "Thon naturel 2x140g x3"}, {"c": "sale", "n": "Curly cacahu\u00e8te x6"}, {"c": "sale", "n": "Monster Munch sal\u00e9 x8"}, {"c": "sale", "n": "Monster Munch jambon/fromage x8"}, {"c": "sale", "n": "Pop-corn sal\u00e9 x3"}, {"c": "sale", "n": "Crackers Tokapi 100g x6"}, {"c": "sale", "n": "Pop-corn sucr\u00e9 x3"}, {"c": "sale", "n": "Lays spicy 130g"}, {"c": "sale", "n": "Lays paprika 130g"}, {"c": "sale", "n": "Doritos nature 205g x2"}, {"c": "sale", "n": "Doritos cheese 250g x2"}, {"c": "sale", "n": "Pois chiches 365g x3"}, {"c": "sale", "n": "Cornichons Rustica 185g"}, {"c": "sale", "n": "Cr\u00e8me l\u00e9g\u00e8re 3x20cl x6"}, {"c": "sale", "n": "St Moret nature 300g x4"}, {"c": "sale", "n": "Saucisson sec 200g x2"}, {"c": "sale", "n": "Saucisse s\u00e8che 200g"}, {"c": "sale", "n": "Crackers sans gluten 210g"}, {"c": "sale", "n": "Beurre doux 200g"}, {"c": "sale", "n": "Beurre demi-sel 200g x2"}, {"c": "sale", "n": "Comt\u00e9 Entremont 350g x3"}, {"c": "sale", "n": "Mayonnaise 425g x2"}, {"c": "sale", "n": "Cornichons vinaigre 360g"}, {"c": "sale", "n": "Farine 1kg x2"}, {"c": "sale", "n": "Chorizo doux 150g x6"}, {"c": "divers", "n": "Savon mains cr\u00e8me 300ml"}, {"c": "divers", "n": "Sacs poubelle 100L x10"}, {"c": "divers", "n": "Filtres caf\u00e9"}, {"c": "divers", "n": "Poches gla\u00e7ons"}, {"c": "divers", "n": "200 cure-dents"}, {"c": "divers", "n": "Essuie-tout 1 grand rouleau"}, {"c": "divers", "n": "Film \u00e9tirable 20m"}];
-
-// ---- FIREBASE SETUP ----
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getDatabase, ref, onValue, set } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
-const firebaseConfig = {
+const db = getDatabase(initializeApp({
   apiKey: "AIzaSyAQQ6STpV-zKvdpzBcQ1qc-DdE9r_0E92M",
   authDomain: "partyplanning-5745f.firebaseapp.com",
   databaseURL: "https://partyplanning-5745f-default-rtdb.europe-west1.firebasedatabase.app",
@@ -367,227 +527,287 @@ const firebaseConfig = {
   storageBucket: "partyplanning-5745f.firebasestorage.app",
   messagingSenderId: "56517094616",
   appId: "1:56517094616:web:38586d9fec04869729bbad"
-};
-const fbApp = initializeApp(firebaseConfig);
-const db    = getDatabase(fbApp);
+}));
 const STATE_REF = ref(db, 'state');
 
-// ---- STATE (defaults) ----
-let guestState   = JSON.parse(JSON.stringify(GUESTS_DEF));
-let prepChecked  = {};
-let checkState   = {};
-let decoChecked  = {};
-let toBuyChecked = {};
-let shopChecked  = {};
-CHECKLIST_DEF.forEach(c => { checkState[c.id] = c.s; });
+// ---- DEFAULT DATA ----
+const G0  = [{"name": "Baptiste", "status": "yes"}, {"name": "Jojo", "status": "yes"}, {"name": "Leina", "status": "yes"}, {"name": "Bertrand", "status": "yes"}, {"name": "Noa", "status": "yes"}, {"name": "Copine de Noa", "status": "yes"}, {"name": "Carine", "status": "yes"}, {"name": "Ludo", "status": "yes"}, {"name": "Thibault", "status": "yes"}, {"name": "Sylvain", "status": "yes"}, {"name": "Sol\u00e8ne", "status": "yes"}, {"name": "Cl\u00e9mentine", "status": "yes"}, {"name": "Alex", "status": "yes"}, {"name": "Louisana", "status": "yes"}, {"name": "Philippe Bossy", "status": "yes"}, {"name": "Fran\u00e7oise", "status": "yes"}, {"name": "Marie", "status": "yes"}, {"name": "Claire", "status": "yes"}, {"name": "Georges", "status": "yes"}, {"name": "Mamie", "status": "yes"}, {"name": "Tati", "status": "yes"}, {"name": "Hugues", "status": "yes"}, {"name": "Anne Marie", "status": "partial", "note": "Soir uniquement"}, {"name": "Elo", "status": "partial", "note": "Soir uniquement"}, {"name": "Romain", "status": "yes", "note": "Il dit oui mais\u2026"}, {"name": "Jean", "status": "yes"}, {"name": "Am\u00e9lie", "status": "yes"}, {"name": "Gaelle", "status": "yes"}, {"name": "Guillaume", "status": "yes"}, {"name": "Ludo G.", "status": "partial", "note": "Matin + aprem uniquement"}, {"name": "Alexia", "status": "partial", "note": "Matin + aprem uniquement"}, {"name": "Stephie", "status": "no", "note": "Ne peut pas venir"}, {"name": "Aurelien", "status": "no", "note": "Tonton de Carine"}, {"name": "Lucie", "status": "yes"}, {"name": "Julien B", "status": "yes"}, {"name": "Adrien", "status": "yes"}, {"name": "Najlae", "status": "yes"}, {"name": "Elliot", "status": "yes"}, {"name": "Christophe", "status": "maybe", "note": "Potentiellement matin/aprem"}, {"name": "Manon", "status": "maybe", "note": "Stage le soir"}, {"name": "Bidou (Thibault Guy)", "status": "yes"}, {"name": "Alixan", "status": "maybe", "note": "Si pr\u00e9sent"}];
+const P0  = [{"title": "Jeudi \u2014 Jour J-2", "date": "30 Avril 2026", "tasks": [{"id": "j1", "n": "Pr\u00e9parer les eco cups", "who": "manaud.laurent", "note": ""}, {"id": "j2", "n": "Pancakes", "who": "Jihane Benmansour", "note": ""}, {"id": "j3", "n": "Oeufs durs (40)", "who": "cbobbxta", "note": ""}, {"id": "j4", "n": "Coulis panna cotta", "who": "baptistebilleaud", "note": ""}, {"id": "j5", "n": "Panna cotta", "who": "Jihane Benmansour", "note": ""}, {"id": "j6", "n": "D\u00e9corer la salle", "who": "Jihane + manaud + cbobbxta + baptiste", "note": "Salle des f\u00eates"}, {"id": "j7", "n": "Remplir les poches \u00e0 gla\u00e7ons", "who": "\u2014", "note": ""}, {"id": "j8", "n": "Pr\u00e9parer le houmous", "who": "Jihane Benmansour", "note": ""}, {"id": "j9", "n": "Pr\u00e9parer la rillette de thon", "who": "cbobbxta", "note": ""}]}, {"title": "Vendredi \u2014 Jour J-1 \u00b7 F\u00e9ri\u00e9", "date": "1er Mai 2026", "tasks": [{"id": "v1", "n": "R\u00e9cup\u00e9rer commande Leclerc Traiteur", "who": "manaud.laurent", "note": "E.Leclerc TRAITEUR Lagord"}, {"id": "v2", "n": "R\u00e9cup\u00e9rer commande viennoiseries", "who": "\u00c0 d\u00e9finir", "note": "Le bonheur est dans le pain"}]}, {"title": "Samedi \u2014 Jour J", "date": "2 Mai 2026", "tasks": [{"id": "s1", "n": "R\u00e9cup\u00e9rer commande Leclerc Traiteur", "who": "manaud.laurent", "note": "E.Leclerc TRAITEUR Lagord"}, {"id": "s2", "n": "R\u00e9cup\u00e9rer commande viennoiseries", "who": "cbobbxta", "note": "Le bonheur est dans le pain"}]}];
+const C0  = [{"id": "c1", "t": "Payer la salle", "who": "Jihane", "s": "done"}, {"id": "c2", "t": "Commande pain et viennoiseries", "who": "Jihane", "s": "done"}, {"id": "c3", "t": "Cr\u00e9er les playlists", "who": "Jihane + cbobbxta", "s": "progress"}, {"id": "c4", "t": "Pr\u00e9parer les ecocups", "who": "manaud.laurent", "s": "todo"}, {"id": "c5", "t": "Trouver urne et livre d\u2019or", "who": "Jihane", "s": "done"}, {"id": "c6", "t": "Affiche QR code cagnotte", "who": "Jihane", "s": "done"}, {"id": "c7", "t": "D\u00e9corer l\u2019urne", "who": "Jihane", "s": "todo"}, {"id": "c8", "t": "Inventaire du mat\u00e9riel", "who": "Jihane", "s": "todo"}, {"id": "c9", "t": "Poser cong\u00e9s jeudi + TT lundi", "who": "Jihane", "s": "done"}, {"id": "c10", "t": "D\u00e9finir programme 3 jours", "who": "Jihane", "s": "progress"}, {"id": "c11", "t": "Finir les courses", "who": "Jihane", "s": "progress"}, {"id": "c12", "t": "Cr\u00e9er drop photos + QR code", "who": "Jihane", "s": "done", "r": "app.eventpics.net/2WwoQhuGYFw6"}, {"id": "c13", "t": "S\u2019abonner \u00e0 EventPics", "who": "Jihane", "s": "todo"}, {"id": "c14", "t": "Location f\u00fbt de bi\u00e8re", "who": "Jihane", "s": "done", "r": "F\u00fbt + tireuse au Caps"}, {"id": "c15", "t": "Listes allerg\u00e8nes et ingr\u00e9dients", "who": "Jihane", "s": "progress"}, {"id": "c16", "t": "Commande Leclerc Traiteur", "who": "Jihane", "s": "done"}, {"id": "c17", "t": "Trouver pizzeria", "who": "Jihane", "s": "abandoned", "r": "Alex am\u00e8ne son four"}];
+const D0  = ["Verres ecocup blanc : 50", "Gobelets cartons : 100", "D\u00e9cos \u00e0 accrocher", "Serviettes eco", "Assiettes en carton : 100", "Couverts en bois 125/type", "Stickers t\u00eate de Lois", "16 lampions argent\u00e9s", "10 ballons disco argent\u00e9s", "5m papier intiss\u00e9 argent\u00e9", "1x9m satin bordeaux (chemin de table)", "2x9m tulle blanche", "5 guirlandes serpentin argent\u00e9es", "60 pellicules instax", "Ballons bordeaux et blancs", "96 verrines", "Nappe papier blanche 20M", "50 gobelets caf\u00e9", "5 plateaux carton", "5 barquettes alu", "Rinces doigts", "Touillettes \u00e0 caf\u00e9", "Enveloppes bordeaux (pellicules)", "Serviettes bordeaux", "Urne + Livre d\u2019or", "Serviettes 33x33 : 50 pi\u00e8ces"];
+const TB0 = ["Agar agar", "Sucre (selon quantit\u00e9)", "Charcuterie : jambons, bacon", "Fromages : Morbier, ch\u00e8vre, camembert", "L\u00e9gumes : tomates cerises, c\u00e9leri, carottes, concombre", "Fruits : kiwi, bananes, pommes", "Oeufs", "10 baguettes", "Fruits surgel\u00e9s (coulis panna cotta)"];
+const SH0 = [{"c": "boissons", "n": "Fanta Orange 1,25L x4"}, {"c": "boissons", "n": "Eau source 5L x5"}, {"c": "boissons", "n": "Perrier 6x1L"}, {"c": "boissons", "n": "San Pellegrino 6x1L x2"}, {"c": "boissons", "n": "Fuze Tea P\u00eache 1,25L x3"}, {"c": "boissons", "n": "Fuze Tea P\u00eache hibiscus x3"}, {"c": "boissons", "n": "Fuze Tea framboise menthe x3"}, {"c": "boissons", "n": "Oasis Tropical 2L x4"}, {"c": "boissons", "n": "Crazy Tiger 1,5L x4"}, {"c": "boissons", "n": "Vin blanc sauvignon 75cl x18"}, {"c": "boissons", "n": "Coca Vanille 1,25L x3"}, {"c": "boissons", "n": "Coca Z\u00e9ro Cherry 1,25L x3"}, {"c": "boissons", "n": "Sirop grenadine 70cl"}, {"c": "boissons", "n": "Sirop citron sicile 70cl"}, {"c": "boissons", "n": "The Kraken 40\u00b0 70cl"}, {"c": "boissons", "n": "F\u00fbt bi\u00e8re 30L (+r\u00e9serve)"}, {"c": "boissons", "n": "Get 27 Menthe 2L"}, {"c": "boissons", "n": "J\u00e4germeister 2L"}, {"c": "boissons", "n": "Ricard 2L"}, {"c": "boissons", "n": "Lait demi-\u00e9cr\u00e9m\u00e9 6x1L"}, {"c": "boissons", "n": "Jus multifruits 2L x3"}, {"c": "boissons", "n": "Caf\u00e9 filtre"}, {"c": "boissons", "n": "Nectar pomme 1,5L x2"}, {"c": "boissons", "n": "Jus orange sans pulpe 1L x4"}, {"c": "boissons", "n": "Coca Zero 6L x12"}, {"c": "boissons", "n": "Lait avoine 1L x2"}, {"c": "boissons", "n": "Jus orange 1,5L x2"}, {"c": "sucre", "n": "Bonbons t\u00e9tine 250g"}, {"c": "sucre", "n": "Th\u00e9 vert citron x20"}, {"c": "sucre", "n": "Earl Grey Bio x20"}, {"c": "sucre", "n": "Nocciolata 650g"}, {"c": "sucre", "n": "P\u00e2te cacahu\u00e8te croquant 325g"}, {"c": "sucre", "n": "Confiture abricot 370g"}, {"c": "sucre", "n": "Confiture framboises 370g"}, {"c": "sucre", "n": "Confiture fraises 370g"}, {"c": "sucre", "n": "Confiture p\u00eaches 370g"}, {"c": "sucre", "n": "Dragibus soft 300g"}, {"c": "sucre", "n": "Tagada 400g"}, {"c": "sucre", "n": "Bonbons Arlequin 250g"}, {"c": "sucre", "n": "Sucre canne 1kg"}, {"c": "sucre", "n": "Biscottes sans gluten 260g"}, {"c": "sucre", "n": "Miel 500g x2"}, {"c": "sucre", "n": "Th\u00e9 gingembre citron x20"}, {"c": "sucre", "n": "Infusion bien-\u00eatre x20"}, {"c": "sale", "n": "Thon naturel 2x140g x3"}, {"c": "sale", "n": "Curly cacahu\u00e8te x6"}, {"c": "sale", "n": "Monster Munch sal\u00e9 x8"}, {"c": "sale", "n": "Monster Munch jambon/fromage x8"}, {"c": "sale", "n": "Pop-corn sal\u00e9 x3"}, {"c": "sale", "n": "Crackers Tokapi 100g x6"}, {"c": "sale", "n": "Pop-corn sucr\u00e9 x3"}, {"c": "sale", "n": "Lays spicy 130g"}, {"c": "sale", "n": "Lays paprika 130g"}, {"c": "sale", "n": "Doritos nature 205g x2"}, {"c": "sale", "n": "Doritos cheese 250g x2"}, {"c": "sale", "n": "Pois chiches 365g x3"}, {"c": "sale", "n": "Cornichons Rustica 185g"}, {"c": "sale", "n": "Cr\u00e8me l\u00e9g\u00e8re 3x20cl x6"}, {"c": "sale", "n": "St Moret nature 300g x4"}, {"c": "sale", "n": "Saucisson sec 200g x2"}, {"c": "sale", "n": "Saucisse s\u00e8che 200g"}, {"c": "sale", "n": "Crackers sans gluten 210g"}, {"c": "sale", "n": "Beurre doux 200g"}, {"c": "sale", "n": "Beurre demi-sel 200g x2"}, {"c": "sale", "n": "Comt\u00e9 Entremont 350g x3"}, {"c": "sale", "n": "Mayonnaise 425g x2"}, {"c": "sale", "n": "Cornichons vinaigre 360g"}, {"c": "sale", "n": "Farine 1kg x2"}, {"c": "sale", "n": "Chorizo doux 150g x6"}, {"c": "divers", "n": "Savon mains cr\u00e8me 300ml"}, {"c": "divers", "n": "Sacs poubelle 100L x10"}, {"c": "divers", "n": "Filtres caf\u00e9"}, {"c": "divers", "n": "Poches gla\u00e7ons"}, {"c": "divers", "n": "200 cure-dents"}, {"c": "divers", "n": "Essuie-tout 1 grand rouleau"}, {"c": "divers", "n": "Film \u00e9tirable 20m"}];
+const MS0 = [{"name": "Panna cotta verrines (2 coulis)", "t": "valid"}, {"name": "Tiramisu en verrines", "t": "valid"}, {"name": "Chouquettes", "t": "valid"}, {"name": "Mini viennoiseries", "t": "bought"}, {"name": "Bonbons", "t": "bought"}, {"name": "G\u00e2teau d\u2019anniversaire", "t": "valid"}, {"name": "Verrines cr\u00e8me dessert chocolat", "t": "valid"}, {"name": "Verrines de li\u00e9geois", "t": "valid"}, {"name": "Mini pancakes", "t": "valid"}, {"name": "Fruits (bananes, raisins, pommes, kiwi)", "t": "valid"}, {"name": "Brioche x2", "t": "bought"}, {"name": "Tartines (nocciolata, caramel, confitures, speculoos)", "t": "bought"}, {"name": "Popcorn sucr\u00e9", "t": "bought"}, {"name": "Cake sucr\u00e9s", "t": "valid"}];
+const ML0 = [{"name": "Houmous", "t": "valid"}, {"name": "Sauces pour l\u00e9gumes", "t": "valid"}, {"name": "Salade pasta", "t": "valid"}, {"name": "Toasts rillettes de poulet", "t": "valid"}, {"name": "Verrines saumon", "t": "valid"}, {"name": "Roul\u00e9es pesto fromage", "t": "valid"}, {"name": "Pain", "t": "bought"}, {"name": "Planche charcuterie", "t": "valid"}, {"name": "Planche fromage", "t": "valid"}, {"name": "L\u00e9gumes (carottes, tomates, radis, c\u00e9leri)", "t": "valid"}, {"name": "Salade tomate mozza", "t": "valid"}, {"name": "Chips", "t": "bought"}, {"name": "Popcorn sal\u00e9", "t": "bought"}, {"name": "Crackers", "t": "bought"}, {"name": "Oeufs mimosa", "t": "valid"}, {"name": "Brochettes fromage/olives/tomates/serrano", "t": "valid"}, {"name": "Rillettes de thon", "t": "valid"}, {"name": "Mini sandwichs (pain de mie, jambon beurre, mozza pesto)", "t": "valid"}, {"name": "Cake sal\u00e9s chorizo comt\u00e9 x2", "t": "valid"}, {"name": "Cake sal\u00e9s courgettes feta x2", "t": "valid"}];
+const MB0 = [{"name": "Caf\u00e9", "t": "bought"}, {"name": "Th\u00e9 (vert, noir, infusions)", "t": "bought"}, {"name": "Eau plate", "t": "bought"}, {"name": "Eau gazeuse", "t": "bought"}, {"name": "Perrier / San Pellegrino", "t": "bought"}, {"name": "Jus d\u2019orange", "t": "bought"}, {"name": "Jus de pomme", "t": "bought"}, {"name": "Jus multifruits", "t": "bought"}, {"name": "Vin blanc sauvignon x18", "t": "bought"}, {"name": "Cr\u00e9mant", "t": "valid"}, {"name": "Coca Z\u00e9ro / Vanille / Cherry", "t": "bought"}, {"name": "Fanta orange", "t": "bought"}, {"name": "Fuze Tea (3 vari\u00e9t\u00e9s)", "t": "bought"}, {"name": "Oasis Tropical x4", "t": "bought"}, {"name": "J\u00e4ger 2L", "t": "bought"}, {"name": "Get 27 Menthe 2L", "t": "bought"}, {"name": "Ricard 2L", "t": "bought"}, {"name": "The Kraken (rhum)", "t": "bought"}, {"name": "F\u00fbt bi\u00e8re 30L", "t": "bought"}, {"name": "Crazy Tiger x4", "t": "bought"}, {"name": "Sirop grenadine + citron sicile", "t": "bought"}, {"name": "Lait demi-\u00e9cr\u00e9m\u00e9 6x1L + avoine 1L x2", "t": "bought"}];
 
-let fbReady = false; // don't save until first load is done
+// ---- LIVE STATE ----
+let guests=cp(G0), prepDays=cp(P0), checkList=cp(C0),
+    decoList=[...D0], toBuyList=[...TB0], shopList=cp(SH0),
+    mSucre=cp(MS0), mSale=cp(ML0), mBoissons=cp(MB0),
+    prepChk={}, checkSt={}, decoChk={}, tbChk={}, shChk={};
+C0.forEach(c=>{ checkSt[c.id]=c.s; });
 
-function saveState() {
-  if (!fbReady) return;
-  set(STATE_REF, { guestState, prepChecked, checkState, decoChecked, toBuyChecked, shopChecked });
-  const t = document.getElementById('save-toast');
-  if (t) { t.style.opacity='1'; setTimeout(()=>t.style.opacity='.35', 1200); }
+let ready=false;
+function cp(x){ return JSON.parse(JSON.stringify(x)); }
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+// ---- FIREBASE ----
+function save(){
+  if(!ready) return;
+  set(STATE_REF,{guests,prepDays,checkList,decoList,toBuyList,shopList,mSucre,mSale,mBoissons,prepChk,checkSt,decoChk,tbChk,shChk});
+  const t=document.getElementById('save-toast');
+  if(t){t.style.opacity='1';setTimeout(()=>t.style.opacity='.35',1200);}
 }
-
-function resetAllState() {
-  if (!confirm('Remettre tout à zéro ? Cette action est irréversible.')) return;
-  fbReady = false;
-  guestState   = JSON.parse(JSON.stringify(GUESTS_DEF));
-  prepChecked  = {};
-  checkState   = {};
-  decoChecked  = {};
-  toBuyChecked = {};
-  shopChecked  = {};
-  CHECKLIST_DEF.forEach(c => { checkState[c.id] = c.s; });
-  fbReady = true;
-  saveState();
-  initGuests(); initMenu(); rPrep(); initShopping(); initChecklist();
+function load(s){
+  if(s.guests)    guests=s.guests;
+  if(s.prepDays)  prepDays=s.prepDays;
+  if(s.checkList) checkList=s.checkList;
+  if(s.decoList)  decoList=s.decoList;
+  if(s.toBuyList) toBuyList=s.toBuyList;
+  if(s.shopList)  shopList=s.shopList;
+  if(s.mSucre)    mSucre=s.mSucre;
+  if(s.mSale)     mSale=s.mSale;
+  if(s.mBoissons) mBoissons=s.mBoissons;
+  if(s.prepChk)   prepChk=s.prepChk;
+  if(s.checkSt)   checkSt=s.checkSt;
+  if(s.decoChk)   decoChk=s.decoChk;
+  if(s.tbChk)     tbChk=s.tbChk;
+  if(s.shChk)     shChk=s.shChk;
 }
-
-// Load from Firebase then boot the app
-onValue(STATE_REF, (snapshot) => {
-  const saved = snapshot.val();
-  if (saved) {
-    if (saved.guestState)   guestState   = saved.guestState;
-    if (saved.prepChecked)  prepChecked  = saved.prepChecked;
-    if (saved.checkState)   checkState   = saved.checkState;
-    if (saved.decoChecked)  decoChecked  = saved.decoChecked;
-    if (saved.toBuyChecked) toBuyChecked = saved.toBuyChecked;
-    if (saved.shopChecked)  shopChecked  = saved.shopChecked;
-  }
-  if (!fbReady) {
-    // First load — boot the UI
-    fbReady = true;
-    initGuests(); initMenu(); rPrep(); initShopping(); initChecklist();
+onValue(STATE_REF, snap=>{
+  const s=snap.val();
+  if(s) load(s);
+  if(!ready){
+    ready=true;
+    document.getElementById('loadingScreen').style.display='none';
+    document.getElementById('appContent').style.display='block';
+    initAll();
   } else {
-    // Subsequent updates from another device — refresh UI silently
-    rGuests(); rPrep(); rShop(); rDeco(); rToBuy(); rCheck();
+    refreshAll();
   }
-}, { onlyOnce: false });
+},{onlyOnce:false});
 
 // ---- NAV ----
-document.querySelectorAll('.nb').forEach(b => b.addEventListener('click', () => {
-  document.querySelectorAll('.nb').forEach(x => x.classList.remove('on'));
-  document.querySelectorAll('.page').forEach(x => x.classList.remove('on'));
+document.querySelectorAll('.nb').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.nb').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('on'));
   b.classList.add('on');
-  document.getElementById('p-' + b.dataset.p).classList.add('on');
+  document.getElementById('p-'+b.dataset.p).classList.add('on');
   window.scrollTo({top:0,behavior:'smooth'});
 }));
-document.addEventListener('click', e => {
-  if (!e.target.closest('.gc-wrap')) document.querySelectorAll('.sdrop').forEach(d => d.remove());
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.gc-wrap')) document.querySelectorAll('.sdrop').forEach(d=>d.remove());
 });
 
-// ---- GUESTS ----
-let gF = 'all';
-const GICONS = {yes:'✅',partial:'🔵',maybe:'🟡',no:'❌'};
-const STATUS_OPTS = [
-  {k:'yes',icon:'✅',label:'Confirmé·e'},
-  {k:'partial',icon:'🔵',label:'Partiel'},
-  {k:'maybe',icon:'🟡',label:'À confirmer'},
-  {k:'no',icon:'❌',label:'Absent·e'},
-];
+// ---- UTILS ----
+function toggleForm(id){
+  const el=document.getElementById(id);
+  el.style.display=el.style.display==='none'?'block':'none';
+}
 
-function openGuestDrop(idx, btn) {
-  document.querySelectorAll('.sdrop').forEach(d => d.remove());
-  const g = guestState[idx];
-  const drop = document.createElement('div');
-  drop.className = 'sdrop';
-  drop.innerHTML = STATUS_OPTS.map(o =>
-    `<button onclick="setGS(${idx},'${o.k}')" class="${g.status===o.k?'cur':''}">${o.icon} ${o.label}</button>`
-  ).join('');
+// ---- RESET ALL ----
+function resetAllState(){
+  if(!confirm('Remettre tout à zéro ?')) return;
+  ready=false;
+  guests=cp(G0); prepDays=cp(P0); checkList=cp(C0);
+  decoList=[...D0]; toBuyList=[...TB0]; shopList=cp(SH0);
+  mSucre=cp(MS0); mSale=cp(ML0); mBoissons=cp(MB0);
+  prepChk={}; checkSt={}; decoChk={}; tbChk={}; shChk={};
+  C0.forEach(c=>{ checkSt[c.id]=c.s; });
+  ready=true; save(); refreshAll();
+}
+
+// ---- GUESTS ----
+let gF='all';
+const GI={yes:'✅',partial:'🔵',maybe:'🟡',no:'❌'};
+const SOPTS=[{k:'yes',i:'✅',l:'Confirmé·e'},{k:'partial',i:'🔵',l:'Partiel'},{k:'maybe',i:'🟡',l:'À confirmer'},{k:'no',i:'❌',l:'Absent·e'}];
+
+function openGuestDrop(idx,btn){
+  document.querySelectorAll('.sdrop').forEach(d=>d.remove());
+  const drop=document.createElement('div'); drop.className='sdrop';
+  drop.innerHTML=SOPTS.map(o=>`<button onclick="setGS(${idx},'${o.k}')" class="${guests[idx].status===o.k?'cur':''}">${o.i} ${o.l}</button>`).join('');
   btn.closest('.gc-wrap').appendChild(drop);
-  setTimeout(() => drop.addEventListener('click', e => e.stopPropagation()), 0);
+  setTimeout(()=>drop.addEventListener('click',e=>e.stopPropagation()),0);
 }
-function setGS(idx, s) {
-  guestState[idx].status = s;
-  document.querySelectorAll('.sdrop').forEach(d => d.remove());
-  saveState(); rGuests();
+function setGS(idx,s){ guests[idx].status=s; document.querySelectorAll('.sdrop').forEach(d=>d.remove()); save(); rGuests(); }
+function deleteGuest(idx){ if(!confirm(`Supprimer "${guests[idx].name}" ?`)) return; guests.splice(idx,1); save(); rGuests(); }
+function addGuest(){
+  const name=document.getElementById('newGuestName').value.trim();
+  if(!name){ document.getElementById('newGuestName').focus(); return; }
+  const note=document.getElementById('newGuestNote').value.trim();
+  const status=document.getElementById('newGuestStatus').value;
+  guests.push({name,status,note:note||undefined});
+  document.getElementById('newGuestName').value=''; document.getElementById('newGuestNote').value='';
+  toggleForm('addGuestForm'); save(); rGuests();
 }
-function rGuests() {
-  const q = document.getElementById('gsearch').value.toLowerCase();
-  const list = guestState.map((g,i) => ({...g,i})).filter(g =>
-    (gF==='all'||g.status===gF) && g.name.toLowerCase().includes(q)
-  );
-  document.getElementById('ggrid').innerHTML = list.length
-    ? list.map(g => `<div class="gc${g.status==='no'?' gno':''}">
-        <div><div class="gcn">${g.name}</div>${g.note?`<div class="gco">${g.note}</div>`:''}</div>
-        <div class="gc-wrap">
-          <button class="gsbtn" onclick="openGuestDrop(${g.i},this)">${GICONS[g.status]||'❓'}</button>
+function rGuests(){
+  const q=document.getElementById('gsearch').value.toLowerCase();
+  const list=guests.map((g,i)=>({...g,i})).filter(g=>(gF==='all'||g.status===gF)&&g.name.toLowerCase().includes(q));
+  document.getElementById('ggrid').innerHTML=list.length
+    ?list.map(g=>`<div class="gc${g.status==='no'?' gno':''}">
+        <div><div class="gcn">${esc(g.name)}</div>${g.note?`<div class="gco">${esc(g.note)}</div>`:''}</div>
+        <div class="gc-actions">
+          <div class="gc-wrap"><button class="gsbtn" onclick="openGuestDrop(${g.i},this)">${GI[g.status]||'❓'}</button></div>
+          <button class="del-btn" onclick="deleteGuest(${g.i})">✕</button>
         </div>
       </div>`).join('')
-    : '<p style="color:#bbb;font-size:.8rem;padding:.6rem">Aucun résultat.</p>';
+    :'<p style="color:#bbb;font-size:.8rem;padding:.6rem">Aucun résultat.</p>';
   const c={yes:0,no:0,maybe:0,partial:0};
-  guestState.forEach(g=>{ if(c[g.status]!==undefined) c[g.status]++; });
-  document.getElementById('gstats').innerHTML =
+  guests.forEach(g=>{ if(c[g.status]!==undefined) c[g.status]++; });
+  document.getElementById('gstats').innerHTML=
     `<span class="sb sby">✅ ${c.yes} Confirmé·e·s</span>
      <span class="sb sbp">🔵 ${c.partial} Partiels</span>
      <span class="sb sbm">🟡 ${c.maybe} À confirmer</span>
      <span class="sb sbn">❌ ${c.no} Absents</span>
-     <span class="sb" style="background:#f0f0f0;color:#555">Total : ${guestState.length}</span>`;
+     <span class="sb" style="background:#f0f0f0;color:#555">Total : ${guests.length}</span>`;
 }
 function setGF(f,btn){ gF=f; document.querySelectorAll('#gfilters .fb').forEach(b=>b.classList.remove('on')); btn.classList.add('on'); rGuests(); }
 function initGuests(){
-  document.getElementById('gfilters').innerHTML =
+  document.getElementById('gfilters').innerHTML=
     [{k:'all',l:'Tous'},{k:'yes',l:'✅ Confirmés'},{k:'partial',l:'🔵 Partiels'},{k:'maybe',l:'🟡 À confirmer'},{k:'no',l:'❌ Absents'}]
     .map(b=>`<button class="fb${b.k==='all'?' on':''}" onclick="setGF('${b.k}',this)">${b.l}</button>`).join('');
   rGuests();
 }
 
 // ---- MENU ----
-function initMenu(){
+function cap(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+function menuArr(col){ return col==='sucre'?mSucre:col==='sale'?mSale:mBoissons; }
+function addMenuItem(col){
+  const nEl=document.getElementById(`newMenu${cap(col)}Name`);
+  const tEl=document.getElementById(`newMenu${cap(col)}Type`);
+  const name=nEl.value.trim(); if(!name){nEl.focus();return;}
+  menuArr(col).push({name,t:tEl.value});
+  nEl.value=''; toggleForm(`addMenu${cap(col)}Form`); save(); rMenu();
+}
+function deleteMenuItem(col,idx){ menuArr(col).splice(idx,1); save(); rMenu(); }
+function rMenu(){
   const dc={valid:'mdv',bought:'mdb',study:'mds',owned:'mdo'};
-  const r=items=>items.map(i=>`<div class="mi"><div class="md ${dc[i.t]||'mds'}"></div><span>${i.name}</span></div>`).join('');
-  document.getElementById('mSucre').innerHTML=r(MENU_SUCRE);
-  document.getElementById('mSale').innerHTML=r(MENU_SALE);
-  document.getElementById('mBoissons').innerHTML=r(MENU_BOISSONS);
+  const r=(arr,col)=>arr.map((i,idx)=>`<div class="mi">
+    <div class="md ${dc[i.t]||'mds'}"></div><span>${esc(i.name)}</span>
+    <button class="mi-del" onclick="deleteMenuItem('${col}',${idx})">✕</button>
+  </div>`).join('');
+  document.getElementById('mSucre').innerHTML=r(mSucre,'sucre');
+  document.getElementById('mSale').innerHTML=r(mSale,'sale');
+  document.getElementById('mBoissons').innerHTML=r(mBoissons,'boissons');
 }
 
-// ---- PREP (checkbox) ----
-function togglePrep(id){ prepChecked[id]=!prepChecked[id]; saveState(); rPrep(); }
-function resetPrep(){ prepChecked={}; saveState(); rPrep(); }
+// ---- PREP ----
+function addPrepTask(){
+  const n=document.getElementById('newPrepTask').value.trim();
+  if(!n){document.getElementById('newPrepTask').focus();return;}
+  const who=document.getElementById('newPrepWho').value.trim()||'—';
+  const di=parseInt(document.getElementById('newPrepDay').value);
+  const id=uid();
+  prepDays[di].tasks.push({id,n,who,note:''});
+  document.getElementById('newPrepTask').value=''; document.getElementById('newPrepWho').value='';
+  toggleForm('addPrepForm'); save(); rPrep();
+}
+function deletePrepTask(di,id){ prepDays[di].tasks=prepDays[di].tasks.filter(t=>t.id!==id); delete prepChk[id]; save(); rPrep(); }
+function togglePrep(id){ prepChk[id]=!prepChk[id]; save(); rPrep(); }
+function resetPrep(){ prepChk={}; save(); rPrep(); }
 function rPrep(){
-  document.getElementById('prepContent').innerHTML = PREP_DAYS.map(day =>
-    `<div class="dl"><h3>${day.title}</h3><p>${day.date}</p></div>
-     ${day.tasks.map(t => {
-       const done=!!prepChecked[t.id];
-       return `<div class="tr2${done?' done-task':''}" onclick="togglePrep('${t.id}')">
-         <div class="chk${done?' checked':''}">✓</div>
-         <div style="flex:1"><div class="tn">${t.n}</div><div class="tw">${t.who}</div>${t.note?`<div class="tno">📍 ${t.note}</div>`:''}</div>
-       </div>`;
-     }).join('')}`
+  document.getElementById('prepContent').innerHTML=prepDays.map((day,di)=>
+    `<div class="dl"><div><h3>${esc(day.title)}</h3><p>${esc(day.date)}</p></div></div>
+     ${day.tasks.map(t=>{const done=!!prepChk[t.id];return`<div class="tr2${done?' done-task':''}">
+       <div class="chk${done?' checked':''}" onclick="togglePrep('${t.id}')">✓</div>
+       <div style="flex:1;cursor:pointer" onclick="togglePrep('${t.id}')">
+         <div class="tn">${esc(t.n)}</div><div class="tw">${esc(t.who)}</div>
+         ${t.note?`<div class="tno">📍 ${esc(t.note)}</div>`:''}
+       </div>
+       <button class="del-btn" onclick="deletePrepTask(${di},'${t.id}')">✕</button>
+     </div>`;}).join('')}`
   ).join('');
 }
 
-// ---- SHOPPING (checkboxes) ----
+// ---- SHOPPING ----
 let sF='all';
-function toggleDeco(i){ decoChecked[i]=!decoChecked[i]; saveState(); rDeco(); }
-function resetDeco(){ decoChecked={}; saveState(); rDeco(); }
+function addDecoItem(){const v=document.getElementById('newDecoItem').value.trim();if(!v)return;decoList.push(v);document.getElementById('newDecoItem').value='';toggleForm('addDecoForm');save();rDeco();}
+function deleteDecoItem(i){decoList.splice(i,1);const nc={};Object.keys(decoChk).forEach(k=>{const ki=parseInt(k);if(ki<i)nc[ki]=decoChk[ki];else if(ki>i)nc[ki-1]=decoChk[ki];});decoChk=nc;save();rDeco();}
+function toggleDeco(i){decoChk[i]=!decoChk[i];save();rDeco();}
+function resetDeco(){decoChk={};save();rDeco();}
 function rDeco(){
-  document.getElementById('decoList').innerHTML = DECO.map((d,i)=>{
-    const on=!!decoChecked[i];
-    return `<span class="schip${on?' checked':''}" onclick="toggleDeco(${i})"><span class="cbox">${on?'✓':''}</span>${d}</span>`;
-  }).join('');
+  document.getElementById('decoList').innerHTML=decoList.map((d,i)=>{const on=!!decoChk[i];
+    return`<span class="schip${on?' checked':''}" onclick="toggleDeco(${i})">
+      <span class="cbox">${on?'✓':''}</span>${esc(d)}
+      <button class="del-btn" onclick="event.stopPropagation();deleteDecoItem(${i})" style="opacity:1;margin-left:2px">✕</button>
+    </span>`;}).join('');
 }
-function toggleToBuy(i){ toBuyChecked[i]=!toBuyChecked[i]; saveState(); rToBuy(); }
-function resetToBuy(){ toBuyChecked={}; saveState(); rToBuy(); }
+function addToBuyItem(){const v=document.getElementById('newToBuyItem').value.trim();if(!v)return;toBuyList.push(v);document.getElementById('newToBuyItem').value='';toggleForm('addToBuyForm');save();rToBuy();}
+function deleteToBuyItem(i){toBuyList.splice(i,1);const nc={};Object.keys(tbChk).forEach(k=>{const ki=parseInt(k);if(ki<i)nc[ki]=tbChk[ki];else if(ki>i)nc[ki-1]=tbChk[ki];});tbChk=nc;save();rToBuy();}
+function toggleToBuy(i){tbChk[i]=!tbChk[i];save();rToBuy();}
+function resetToBuy(){tbChk={};save();rToBuy();}
 function rToBuy(){
-  document.getElementById('toBuyList').innerHTML = TO_BUY.map((c,i)=>{
-    const on=!!toBuyChecked[i];
-    return `<span class="bchip${on?' checked':''}" onclick="toggleToBuy(${i})"><span class="cbox">${on?'✓':''}</span>${c}</span>`;
-  }).join('');
+  document.getElementById('toBuyList').innerHTML=toBuyList.map((c,i)=>{const on=!!tbChk[i];
+    return`<span class="bchip${on?' checked':''}" onclick="toggleToBuy(${i})">
+      <span class="cbox">${on?'✓':''}</span>${esc(c)}
+      <button class="del-btn" onclick="event.stopPropagation();deleteToBuyItem(${i})" style="opacity:1;margin-left:2px">✕</button>
+    </span>`;}).join('');
 }
-function setSF(f,btn){ sF=f; document.querySelectorAll('#shopFilters .fb').forEach(b=>b.classList.remove('on')); btn.classList.add('on'); rShop(); }
-function toggleShop(i){ shopChecked[i]=!shopChecked[i]; saveState(); rShop(); }
-function resetShop(){ shopChecked={}; saveState(); rShop(); }
+function addShopItem(){
+  const n=document.getElementById('newShopItem').value.trim();if(!n)return;
+  const c=document.getElementById('newShopCat').value;
+  shopList.push({c,n});document.getElementById('newShopItem').value='';toggleForm('addShopForm');save();rShop();
+}
+function deleteShopItem(i){shopList.splice(i,1);const nc={};Object.keys(shChk).forEach(k=>{const ki=parseInt(k);if(ki<i)nc[ki]=shChk[ki];else if(ki>i)nc[ki-1]=shChk[ki];});shChk=nc;save();rShop();}
+function setSF(f,btn){sF=f;document.querySelectorAll('#shopFilters .fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');rShop();}
+function toggleShop(i){shChk[i]=!shChk[i];save();rShop();}
+function resetShop(){shChk={};save();rShop();}
 function rShop(){
-  const items=(sF==='all'?SHOP:SHOP.filter(s=>s.c===sF)).map((s,_,arr)=>({...s,i:SHOP.indexOf(s)}));
-  document.getElementById('shopList').innerHTML = items.map(s=>{
-    const on=!!shopChecked[s.i];
-    return `<span class="schip${on?' checked':''}" onclick="toggleShop(${s.i})"><span class="cbox">${on?'✓':''}</span>${s.n}</span>`;
-  }).join('');
-  const total=SHOP.length, done=Object.values(shopChecked).filter(Boolean).length;
+  const items=shopList.map((s,i)=>({...s,i})).filter(s=>sF==='all'||s.c===sF);
+  document.getElementById('shopList').innerHTML=items.map(s=>{const on=!!shChk[s.i];
+    return`<span class="schip${on?' checked':''}" onclick="toggleShop(${s.i})">
+      <span class="cbox">${on?'✓':''}</span>${esc(s.n)}
+      <button class="del-btn" onclick="event.stopPropagation();deleteShopItem(${s.i})" style="opacity:1;margin-left:2px">✕</button>
+    </span>`;}).join('');
+  const total=shopList.length,done=Object.values(shChk).filter(Boolean).length;
   document.getElementById('shopProgress').textContent=`${done}/${total} cochés`;
   document.getElementById('shopBar').style.width=(total?done/total*100:0)+'%';
 }
 function initShopping(){
-  rDeco(); rToBuy();
+  rDeco();rToBuy();
   document.getElementById('shopFilters').innerHTML=
     [{k:'all',l:'Tout'},{k:'boissons',l:'🥤 Boissons'},{k:'sucre',l:'🍬 Sucré'},{k:'sale',l:'🧂 Salé'},{k:'divers',l:'📦 Divers'}]
     .map(c=>`<button class="fb${c.k==='all'?' on':''}" onclick="setSF('${c.k}',this)">${c.l}</button>`).join('');
   rShop();
 }
 
-// ---- CHECKLIST (cycle status) ----
+// ---- CHECKLIST ----
 let cF='all';
-const S_CYCLE=['todo','progress','done','abandoned'];
-const S_MAP={done:['bd','✓ Terminée'],progress:['bp','⏳ En cours'],todo:['bt','○ À faire'],abandoned:['ba','✗ Abandonné']};
-function cycleStatus(id){
-  const idx=S_CYCLE.indexOf(checkState[id]||'todo');
-  checkState[id]=S_CYCLE[(idx+1)%S_CYCLE.length];
-  saveState(); rCheck();
+const SC=['todo','progress','done','abandoned'];
+const SM={done:['bd','✓ Terminée'],progress:['bp','⏳ En cours'],todo:['bt','○ À faire'],abandoned:['ba','✗ Abandonné']};
+function addCheckItem(){
+  const t=document.getElementById('newCheckTask').value.trim();if(!t){document.getElementById('newCheckTask').focus();return;}
+  const who=document.getElementById('newCheckWho').value.trim()||'—';
+  const s=document.getElementById('newCheckStatus').value;
+  const id=uid();
+  checkList.push({id,t,who,s});checkSt[id]=s;
+  document.getElementById('newCheckTask').value='';document.getElementById('newCheckWho').value='';
+  toggleForm('addCheckForm');save();rCheck();
 }
-function resetChecklist(){ CHECKLIST_DEF.forEach(c=>{ checkState[c.id]=c.s; }); saveState(); rCheck(); }
-function setCF(f,btn){ cF=f; document.querySelectorAll('#checkFilters .fb').forEach(b=>b.classList.remove('on')); btn.classList.add('on'); rCheck(); }
+function deleteCheckItem(id){checkList=checkList.filter(c=>c.id!==id);delete checkSt[id];save();rCheck();}
+function cycleStatus(id){const idx=SC.indexOf(checkSt[id]||'todo');checkSt[id]=SC[(idx+1)%SC.length];save();rCheck();}
+function resetChecklist(){C0.forEach(c=>{checkSt[c.id]=c.s;});save();rCheck();}
+function setCF(f,btn){cF=f;document.querySelectorAll('#checkFilters .fb').forEach(b=>b.classList.remove('on'));btn.classList.add('on');rCheck();}
 function rCheck(){
-  const list=cF==='all'?CHECKLIST_DEF:CHECKLIST_DEF.filter(c=>checkState[c.id]===cF);
+  const list=cF==='all'?checkList:checkList.filter(c=>(checkSt[c.id]||c.s)===cF);
   document.getElementById('checkBody').innerHTML=list.map(c=>{
-    const s=checkState[c.id]||'todo';
-    const[cls,lbl]=S_MAP[s];
-    return `<tr>
-      <td><b>${c.t}</b>${c.r?`<br><span style="font-size:.68rem;color:#bbb;font-style:italic">${c.r}</span>`:''}</td>
-      <td style="font-size:.75rem;color:#bbb">${c.who}</td>
-      <td><span class="badge ${cls}" onclick="cycleStatus('${c.id}')" title="Cliquer pour changer le statut">${lbl}</span></td>
-      <td style="font-size:.7rem;color:#bbb;font-style:italic">${c.r||''}</td>
-    </tr>`;
-  }).join('');
+    const s=checkSt[c.id]||c.s||'todo';const[cls,lbl]=SM[s];
+    return`<tr>
+      <td><b>${esc(c.t)}</b>${c.r?`<br><span style="font-size:.68rem;color:#bbb;font-style:italic">${esc(c.r)}</span>`:''}</td>
+      <td style="font-size:.75rem;color:#bbb">${esc(c.who)}</td>
+      <td><span class="badge ${cls}" onclick="cycleStatus('${c.id}')" title="Cliquer pour changer">${lbl}</span></td>
+      <td style="font-size:.7rem;color:#bbb">${c.r?esc(c.r):''}</td>
+      <td><button class="del-btn" onclick="deleteCheckItem('${c.id}')" style="opacity:1">✕</button></td>
+    </tr>`;}).join('');
   const cnt={done:0,progress:0,todo:0,abandoned:0};
-  CHECKLIST_DEF.forEach(c=>{ cnt[checkState[c.id]||'todo']++; });
+  checkList.forEach(c=>{const s=checkSt[c.id]||c.s||'todo';if(cnt[s]!==undefined)cnt[s]++;});
   document.getElementById('cD').textContent=cnt.done;
   document.getElementById('cP').textContent=cnt.progress;
   document.getElementById('cT').textContent=cnt.todo;
   document.getElementById('cA').textContent=cnt.abandoned;
-  document.getElementById('checkBar').style.width=(CHECKLIST_DEF.length?cnt.done/CHECKLIST_DEF.length*100:0)+'%';
+  document.getElementById('checkBar').style.width=(checkList.length?cnt.done/checkList.length*100:0)+'%';
 }
 function initChecklist(){
   document.getElementById('checkFilters').innerHTML=
@@ -596,44 +816,21 @@ function initChecklist(){
   rCheck();
 }
 
-// ---- EXPOSE FUNCTIONS TO WINDOW (needed for onclick in HTML with type=module) ----
-window.openGuestDrop = openGuestDrop;
-window.setGS         = setGS;
-window.setGF         = setGF;
-window.rGuests       = rGuests;
-window.togglePrep    = togglePrep;
-window.resetPrep     = resetPrep;
-window.toggleDeco    = toggleDeco;
-window.resetDeco     = resetDeco;
-window.toggleToBuy   = toggleToBuy;
-window.resetToBuy    = resetToBuy;
-window.setSF         = setSF;
-window.toggleShop    = toggleShop;
-window.resetShop     = resetShop;
-window.setCF         = setCF;
-window.cycleStatus   = cycleStatus;
-window.resetChecklist= resetChecklist;
-window.resetAllState = resetAllState;
-// ---- INIT handled by Firebase onValue above ----
+// ---- INIT / REFRESH ----
+function initAll(){initGuests();rMenu();rPrep();initShopping();initChecklist();}
+function refreshAll(){rGuests();rMenu();rPrep();rShop();rDeco();rToBuy();rCheck();}
 
-// Expose functions to global scope (needed for onclick in HTML with type="module")
-window.setGF         = setGF;
-window.openGuestDrop = openGuestDrop;
-window.setGS         = setGS;
-window.rGuests       = rGuests;
-window.togglePrep    = togglePrep;
-window.resetPrep     = resetPrep;
-window.setSF         = setSF;
-window.toggleDeco    = toggleDeco;
-window.resetDeco     = resetDeco;
-window.toggleToBuy   = toggleToBuy;
-window.resetToBuy    = resetToBuy;
-window.toggleShop    = toggleShop;
-window.resetShop     = resetShop;
-window.setCF         = setCF;
-window.cycleStatus   = cycleStatus;
-window.resetChecklist= resetChecklist;
-window.resetAllState = resetAllState;
+// ---- EXPOSE TO WINDOW ----
+Object.assign(window,{
+  toggleForm,setGF,openGuestDrop,setGS,deleteGuest,addGuest,rGuests,
+  addMenuItem,deleteMenuItem,
+  togglePrep,resetPrep,addPrepTask,deletePrepTask,
+  addDecoItem,deleteDecoItem,toggleDeco,resetDeco,
+  addToBuyItem,deleteToBuyItem,toggleToBuy,resetToBuy,
+  addShopItem,deleteShopItem,setSF,toggleShop,resetShop,
+  addCheckItem,deleteCheckItem,cycleStatus,resetChecklist,setCF,
+  resetAllState,
+});
 </script>
 </body>
 </html>
