@@ -596,7 +596,44 @@ function initChecklist(){
   rCheck();
 }
 
+// ---- EXPOSE FUNCTIONS TO WINDOW (needed for onclick in HTML with type=module) ----
+window.openGuestDrop = openGuestDrop;
+window.setGS         = setGS;
+window.setGF         = setGF;
+window.rGuests       = rGuests;
+window.togglePrep    = togglePrep;
+window.resetPrep     = resetPrep;
+window.toggleDeco    = toggleDeco;
+window.resetDeco     = resetDeco;
+window.toggleToBuy   = toggleToBuy;
+window.resetToBuy    = resetToBuy;
+window.setSF         = setSF;
+window.toggleShop    = toggleShop;
+window.resetShop     = resetShop;
+window.setCF         = setCF;
+window.cycleStatus   = cycleStatus;
+window.resetChecklist= resetChecklist;
+window.resetAllState = resetAllState;
 // ---- INIT handled by Firebase onValue above ----
+
+// Expose functions to global scope (needed for onclick in HTML with type="module")
+window.setGF         = setGF;
+window.openGuestDrop = openGuestDrop;
+window.setGS         = setGS;
+window.rGuests       = rGuests;
+window.togglePrep    = togglePrep;
+window.resetPrep     = resetPrep;
+window.setSF         = setSF;
+window.toggleDeco    = toggleDeco;
+window.resetDeco     = resetDeco;
+window.toggleToBuy   = toggleToBuy;
+window.resetToBuy    = resetToBuy;
+window.toggleShop    = toggleShop;
+window.resetShop     = resetShop;
+window.setCF         = setCF;
+window.cycleStatus   = cycleStatus;
+window.resetChecklist= resetChecklist;
+window.resetAllState = resetAllState;
 </script>
 </body>
 </html>
